@@ -34,7 +34,7 @@
 }
 :root {
     --pink:#FFFBF2;
-    --grey:#10393B;
+    --grey:#E6E8DF;
 }
 .bg-pink {
     background: var(--pink);
