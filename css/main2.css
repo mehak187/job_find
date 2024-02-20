@@ -8,3 +8,10 @@
 .nav-btn {
     padding: 14px 26px;
 }
+.home-img {
+    vertical-align: bottom;
+    max-width: 280px
+}
+.hero-height {
+    min-height: calc(100dvh - 83px)
+}
