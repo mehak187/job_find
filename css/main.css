@@ -5,3 +5,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'rubik';
+    src: url('../fonts/rubik-bold-webfont.woff2') format('woff2'),
+         url('../fonts/rubik-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url('../fonts/rubik-medium-webfont.woff2') format('woff2'),
+         url('../fonts/rubik-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url('../fonts/rubik-regular-webfont.woff2') format('woff2'),
+         url('../fonts/rubik-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+:root {
+    --pink:#FFFBF2;
+    --grey:#10393B;
+}
+.bg-pink {
+    background: var(--pink);
+}
+.bg-grey {
+    background: var(--grey);
+}
+.pointer {
+    cursor: pointer;
+}
+.overflow-auto {
+    overflow: auto;
+}
+body {
+    font-family: 'rubik';
+    font-weight: 400;
+}
+.fw-md {
+    font-weight: 500;
+}
+.fw-bd {
+    font-weight: 700;
+}
+.fw-reg {
+    font-weight: 400;
+}
