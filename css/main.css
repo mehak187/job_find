@@ -64,6 +64,9 @@ body {
 .green{
     color: #11734B;
 }
+.lgreen{
+    background-color: #CFE3DB;
+}
 .greenbtm{
     border-bottom: solid 10px #11734B;
 }
