@@ -63,6 +63,11 @@
     border-radius: 9px;
 }
 
+.main-ul{
+    height: calc(100vh - 195px);
+    overflow-y: auto;
+}
+
 .main-ul li a{
     text-decoration: none;
     display: flex;
