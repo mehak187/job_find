@@ -68,6 +68,11 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
 }
+.focus-none:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
 @media screen and (max-width:577px){
  
 }
