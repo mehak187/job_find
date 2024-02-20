@@ -53,11 +53,11 @@
 
 .side-div{
     height: calc(100vh - 92px);
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
 }
 .main-side{
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     height: calc(100vh - 92px);
     background-color: #FBFBFB;
     border-radius: 9px;
