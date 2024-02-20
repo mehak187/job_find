@@ -90,7 +90,7 @@
 .main-ul{
     height: calc(100vh - 195px);
     overflow-y: auto;
-    padding-right: 4px;
+    padding:0 4px;
 }
 
 .main-ul::-webkit-scrollbar {
@@ -161,6 +161,22 @@
 /* ==============================
            Media Query
 ==================================== */
+@media screen and (max-width: 1800px){
+    .my_container{
+        max-width: 1700px;
+    }
+}
+@media screen and (max-width: 1600px){
+    .my_container{
+        max-width: 1500px;
+    }
+}
+@media screen and (max-width: 1400px){
+    
+}
+@media screen and (max-width: 1200px){
+    
+}
 @media screen and (min-width: 769px){
     .side-div{
         display: block !important;
