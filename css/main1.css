@@ -7,13 +7,17 @@
 }
 .joblg{
     background-color: #fff;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
 }
 .joblg img{
-    width: 40px;
+    width: 50px;
+}
+.btnwdth{
+    width: 100%;
+    max-width: 200px;
 }
