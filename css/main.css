@@ -61,3 +61,12 @@ body {
 .fw-reg {
     font-weight: 400;
 }
+.mycontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+@media screen and (max-width:577px){
+ 
+}
