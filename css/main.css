@@ -61,6 +61,34 @@ body {
 .fw-reg {
     font-weight: 400;
 }
+.green{
+    color: #11734B;
+}
+.greenbtm{
+    border-bottom: solid 10px #11734B;
+}
+.blue{
+    color: #0A53A8;
+}
+.bluebtm{
+    border-bottom: solid 10px #0A53A8;
+
+}
+.black{
+    color: #000;
+}
+.blackbtm{
+    border-bottom: solid 10px #000;
+}
+.sky{
+    color: #3083E2;
+}
+.skybtm{
+    border-bottom: solid 10px #3083E2;
+}
+textarea{
+    resize: none;
+}
 .mycontainer {
     max-width: 1200px;
     width: 100%;
