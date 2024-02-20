@@ -73,9 +73,21 @@ body {
 .blue{
     color: #0A53A8;
 }
+.borderblue{
+    border: solid 1px #0A53A8;
+}
 .bluebtm{
     border-bottom: solid 10px #0A53A8;
 
+}
+.orange{
+    color: #FD760C;
+}
+.borderorng{
+    border: solid 1px  #FD760C;
+}
+.borderr{
+    border-right: solid 1px #cdcdcd;
 }
 .black{
     color: #000;
