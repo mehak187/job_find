@@ -73,8 +73,17 @@ body {
 .greenbtm{
     border-bottom: solid 10px #11734B;
 }
+.lblue{
+    background-color: #E1E1F1;
+}
 .blue{
     color: #0A53A8;
+}
+.pink{
+    color: #921051;
+}
+.lpink{
+    background-color: #F4DAE7;
 }
 .borderblue{
     border: solid 1px #0A53A8;
