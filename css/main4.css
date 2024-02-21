@@ -84,3 +84,10 @@
     font-size: 18px;
     padding-left: 10px;
 }
+
+@media screen and (max-width: 992px) {
+    .custom-margin{
+        margin-bottom: 20px;
+    }
+    
+}
