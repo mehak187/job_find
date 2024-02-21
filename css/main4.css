@@ -4,3 +4,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.dashboard-table{
+    overflow: auto;
+    width: 1000px;
+}
+
+.dashboard-head-1{
+    border-top-left-radius: 10px;
+}
+
+.dashboard-head-2{
+    border-top-right-radius: 10px;
+}
+
+.btn-dash{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.red{
+    color: #FF6550;
+}
+
+.lred{
+    background: #ebe3e2;
+}
