@@ -39,7 +39,7 @@
     border: 4px solid #f1f1f4;
 }
 
-.table{
+.table {
     background-color: #f1f1f4;
 }
 
@@ -122,14 +122,10 @@
 
 /* Company View Start */
 
-.profile-img{
-    /* background-color: #fff; */
-    /* width: 100%;
-    height: 100%;
-    max-width: 90px;
-    max-height: 90px; */
+.profile-img {
+    background-color: #fff;
     width: 90px;
-    height: 90px; 
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,11 +135,21 @@
     left: 30px;
 }
 
-.company-view-bg{
+.company-view-bg {
     background: none;
 }
 
-.job-btn{
+.title-name h5 {
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.title-name a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.job-btn {
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -154,10 +160,11 @@
     cursor: pointer;
 }
 
-.edit-btn{
+.edit-btn {
     background: #fff;
     color: #000;
 }
+
 /* Company View End */
 
 
@@ -179,6 +186,7 @@
     background: #fff;
     border-radius: 5px;
     border: 1px solid #000;
+    margin-block: 55px;
 }
 
 /* Scrollbar end */
@@ -240,6 +248,7 @@
 
     .table th {
         font-size: 14px;
+        font-weight: light;
     }
 
     .table tr td {
