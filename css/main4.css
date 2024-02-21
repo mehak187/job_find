@@ -47,14 +47,14 @@
 .custom-font-weight{
     font-weight: lighter;
 }
-
+/* 
 .box{
     background: #F2F2F2;
     border: 0;
     border-radius: 10px;
     display: flex;
     height: 50px;
-    /* width: 300px; */
+    width: 350px;
 }
 
 .box input{
@@ -62,11 +62,39 @@
     border: none;
     width: 100%;
     outline: none;
+    height: 100%;
 }
 
-.box p, .box i{
+.box i{
     color: #C3C6CC;
     position: absolute;
-    padding: 0 10px;
+}
+ */
+
+ .box {
+    width: 380px;
+    height: 50px;
+    background: #F2F2F2;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
+.box i {
+    font-size: 20px;
+    color: #C3C6CC;
+    cursor: pointer;
+}
+
+.box input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
