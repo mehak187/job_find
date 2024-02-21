@@ -34,3 +34,7 @@
 .navbar-w .nav-link {
     width: max-content;
 }
+
+.socialftr {
+    max-width: 40px;
+}
