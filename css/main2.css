@@ -30,3 +30,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.navbar-w .nav-link {
+    width: max-content;
+}
