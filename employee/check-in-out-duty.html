@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
     <link rel="stylesheet" href="../css/main2.css">
     <link rel="stylesheet" href="../css/main3.css">
     <link rel="stylesheet" href="../css/main4.css">
@@ -28,7 +29,7 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between max-w2">
                     <div class="d-md-block d-none">
-                        <h3 class="mb-0">Dashboard</h3>
+                        <h3 class="mb-0">Check-in-Out-Duty</h3>
                     </div>
                     <div class="d-flex align-items-center justify-content-end gap-3 w-width">
                         <div class="d-flex align-items-center justify-content-end">
@@ -65,8 +66,8 @@
                                 <a href="#" class="d-flex flex-column align-items-center text-dark text-decoration-none"><img src="../img/pro_file.png" alt="" class="img-profile">User Name</a>
                             </div>
                             <ul class="list-unstyled main-ul overflow-auto">
-                                <li><a href="" class="active">
-                                        <img src="../img/dashboard-1.png" alt="">
+                                <li><a href="" class="">
+                                        <img src="../img/dashboard.png" alt="">
                                         <p class="mb-0">Dashboard</p>
                                     </a></li>
                                 <li><a href="" class="">
@@ -81,8 +82,8 @@
                                         <img src="../img/application.png" alt="">
                                         <p class="mb-0">My Applications</p>
                                     </a></li>
-                                <li class=""><a href="" class="">
-                                        <img src="../img/time-fast.png" alt="">
+                                <li class=""><a href="#" class="active">
+                                        <img src="../img/time-fast-1.png" alt="">
                                         <p class="mb-0">Check-in-Out-Duty</p>
                                     </a></li>
                                 <li class="border-bottom mt-3 border-2"></li>
@@ -102,7 +103,54 @@
                 </div>
                 <div class="main-side p-3">
                     <div class="main-side2  pe-3">
-                        
+                        <div class="row align-items-end">
+                            <div class="col-6">
+                                <h5>Shift Listing</h5>
+                                <p class="mb-0 font-12 grey-clr">Here is your listing status from January 01 - January 20.</p>
+                            </div>
+                            <div class="col-6">
+                                <form action="" class="d-flex align-items-center gap-2">
+                                    <div class="my_input d-flex align-items-center gap-2">
+                                        <i class="bi bi-search grey-clr"></i>
+                                        <input type="text" name="" id="" class="bg-transparent w-100 border-0 py-1" placeholder="Search Application">
+                                    </div>
+                                    <div class="d-flex grey-bg py-2 px-4 align-items-center gap-2 rounded-3">
+                                        <div>
+                                            <p class="mb-0">1/1/2024</p>
+                                        </div>
+                                        <div>
+                                            <img src="../img/calendar-clock.png" alt="" class="bg-dark p-2 rounded-3 img-cal">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="mt-4 dashboard-table">
+                            <div class="admin-table table-responsive ">
+                                <table class="table">
+                                    <thead class="text-center align-middle">
+                                        <th class="table-dark text-nowrap px-3 py-3 fw-normal dashboard-head-1">Roles</th>
+                                        <th class="table-dark text-nowrap px-3 py-3 fw-normal">Status</th>
+                                        <th class="table-dark text-nowrap px-3 py-3 fw-normal">Date Posted</th>
+                                        <th class="table-dark text-nowrap px-3 py-3 fw-normal">Due Date</th>
+                                        <th class="table-dark text-nowrap px-3 py-3 fw-normal">Shifts Type</th>
+                                        <th class="table-dark text-nowrap px-3 py-3 fw-normal">Total Application</th>
+                                        <th class="table-dark text-nowrap px-3 py-3 fw-normal">Needs</th>
+                                        <th class="table-dark text-nowrap px-3 py-3 fw-normal dashboard-head-2">Action</th>
+                                    </thead>
+                                    <tr class="align-middle">
+                                        <td class="text-no-wrap text-center">UI/UX Designer</td>
+                                        <td class="text-no-wrap text-center">Live</td>
+                                        <td class="text-no-wrap text-center">1 January 2024</td>
+                                        <td class="text-no-wrap text-center">15 January 2024</td>
+                                        <td class="text-no-wrap text-center">Full Time</td>
+                                        <td class="text-no-wrap text-center">19</td>
+                                        <td class="text-no-wrap text-center">04/11</td>
+                                        <td class="text-no-wrap text-center"><i class="bi bi-trash-fill text-danger trash-bg p-2 rounded-circle"></i></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
