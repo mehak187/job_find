@@ -132,5 +132,18 @@ textarea{
     outline: none;
 }
 @media screen and (max-width:577px){
- 
+    .filter-menu {
+        position: absolute;
+        background: white;
+        max-width: 240px;
+        padding-left: 20px;
+        margin-left: -15px !important;
+        display: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+@media screen and (min-width:577px){
+    .filter-menu {
+        display: block !important;
+    }
 }
