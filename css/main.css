@@ -126,6 +126,9 @@ textarea{
     padding: 0 20px;
     box-sizing: border-box;
 }
+.sgn{
+    height: 100dvh;
+}
 .focus-none:focus {
     box-shadow: none;
     border: none;
