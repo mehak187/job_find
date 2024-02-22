@@ -221,6 +221,11 @@
 /* Admin Dashboard 2 & 3 End */
 
 /* dashboard-notification start */
+
+.bg-notification{
+    background-color: rgba(228, 228, 228, 0.5);
+}
+
 .dashboard-notification {
     width: 100%;
     height: calc(100dvh - 110px);
@@ -229,12 +234,9 @@
 }
 
 .notification-card {
-    height: 147px;
     width: 100%;
-}
-
-.notification-bg {
-    background: #E4E4E4;
+    background: white;
+    border-radius: 10px;
 }
 
 .custom-notification-wh {
@@ -242,41 +244,36 @@
     height: 60px;
 }
 
-.img-margin {
-    margin-left: 22px;
-    margin-top: 15px;
-}
-
-.titles-margin {
-    margin-left: 22px;
-    margin-top: 27px;
-}
-
-.titles-margin h6 {
+.titles-text h6 {
     font-size: 16px;
     font-weight: lighter;
 }
 
-.titles-margin p {
+.p-content {
     font-size: 14px;
     color: #89909E;
 }
 
-.btn-notification {
-    text-decoration: none;
+.time-notification{
+    font-size: 12px;
+}
+
+.btn-notification{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 126px;
     height: 40px;
-    border-radius: 50px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.card-text {
-    padding-top: 18px;
-}
+/* .max-custom-width{
+    max-width: 800px;
+} */
 
+.time-notification{
+    color: #7C8493;
+}
 /* dashboard-notification End */
 
 
@@ -407,4 +404,27 @@
     }
 
     /* Admin Dashboard END */
+
+    /* Dashboard Notification Start */
+
+    .titles-text h6{
+        font-size: 14px;
+    }
+
+    .p-content{
+        font-size: 11px;
+    }
+
+    .time-notification{
+        font-size: 9px;
+    }
+
+    .btn-notification{
+        width: 90px;
+        height: 25px;
+        font-size: 12px;
+    }
+    
+
+    /* Dashboard Notification End */
 }
