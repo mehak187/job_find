@@ -8,73 +8,113 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/main3.css">
+    <link rel="stylesheet" href="../css/main4.css">
     <title>Document</title>
 </head>
 <body>
-    <style>
-        .table .table-blue{
-    background-color: #0D8BE6;
-}
-
-.table tr td {
-    background-color: #E7F3FD;
-}
-        .table tbody tr {
-    border: 4px solid #fff
-}
-
-.table tbody tr td:first-child {
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
-}
-
-.table tbody tr td:last-child {
-    border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
-}
-
-    </style>
-
-<div class="shadow bg-white pb-2 rounded-4 table-responsive">
-    <table id="myTable1" class="table">
-        <thead class="">
-            <tr class="">
-                <th class="text-white p-3 table-blue text-center text-nowrap">Sno</th>
-                <th class="text-white p-3 table-blue text-center text-nowrap">Heading</th>
-                <th class="text-white p-3 table-blue text-center text-nowrap">Create date</th>
-                <th class="text-white p-3 table-blue text-center text-nowrap">Description</th>
-                <th class="text-white p-3 table-blue text-center text-nowrap">Status</th>
-            </tr>
-        </thead>
-        <tbody class="">
-            <tr>
-                <td class="text-center p-2 text-nowrap">01</td>
-                <td class="text-center p-2 text-nowrap">Usleads</td>
-                <td class="text-center p-2 text-nowrap">22 Dec 2023 12:30:24</td>
-                <td class="text-center p-2 text-nowrap">Hi {%name%}, I am {%agent name%}, I  called you but the call  went unanswered.</td>
-                <td class="text-center p-2 text-nowrap">Active</td>
-            </tr>
-            <tr>
-                <td class="text-center p-2 text-nowrap">01</td>
-                <td class="text-center p-2 text-nowrap">Usleads</td>
-                <td class="text-center p-2 text-nowrap">22 Dec 2023 12:30:24</td>
-                <td class="text-center p-2 text-nowrap">Hi {%name%}, I am {%agent name%}, I  called you but the call  went unanswered.</td>
-                <td class="text-center p-2 text-nowrap">Active</td>
-            </tr>
-            <tr>
-                <td class="text-center p-2 text-nowrap">01</td>
-                <td class="text-center p-2 text-nowrap">Usleads</td>
-                <td class="text-center p-2 text-nowrap">22 Dec 2023 12:30:24</td>
-                <td class="text-center p-2 text-nowrap">Hi {%name%}, I am {%agent name%}, I  called you but the call  went unanswered.</td>
-                <td class="text-center p-2 text-nowrap">Active</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="p-2">
-        <div>
-            <button class="purple-bg text-white px-3 py-2 rounded-1 border-0"><i class="bi bi-eye-fill text-white me-2"></i>View All</button>
+  <!-- social media popup -->
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Job Application</h1>
+          <button type="button" class="bg-transparent border-0" data-bs-dismiss="modal" aria-label="Close">
+            <img src="../img/close.png" alt="" class="img-close">
+          </button>
         </div>
+        <div class="modal-body">
+        <form action="">
+            <div class="d-flex align-items-center justify-content-between border-bottom border-2 pb-3 flex-wrap gap-4">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <img src="../img/job2.png" alt="" class="job-img">
+                    </div>
+                    <div class="ms-2">
+                        <h6 class="mb-0">Social Media Assistant</h6>
+                        <div>
+                            <p class="mb-0">Dropbox . Location USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="full-clr full-time px-3 py-1 rounded-pill">Full time</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <h6 class="mb-0">Submit your Application</h6>
+                <p class="mb-0 grey-clr font-12">The following is required and will only be shared with Nomad</p>
+            </div>
+            <div class="border-bottom border-2 pb-2">
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <label for="">Full Name</label>
+                        <input type="text" class="my_input" name="" id="" placeholder="Enter Your Full Name">
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <label for="">Email</label>
+                        <input type="email" class="my_input" name="" id="" placeholder="Enter Your Email">
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <label for="">Phone Number</label>
+                        <input type="text" class="my_input" name="" id="" placeholder="Enter Your Phone Number">
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <label for="">Current or Previous Job Title</label>
+                        <input type="" class="my_input" name="" id="" placeholder="What is current or previous job title?">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <h6>Links</h6>
+                <div class="col-sm-6 mb-3">
+                    <label for="">Linked In URL</label>
+                    <input type="text" class="my_input" name="" id="" placeholder="Enter Your Linked In URL">
+                </div>
+                <div class="col-sm-6 mb-3">
+                    <label for="">Portfolio URL</label>
+                    <input type="text" class="my_input" name="" id="" placeholder="Enter Your Portfolio URL">
+                </div>
+                <div class="col-sm-6 mb-3">
+                    <label for="">Additional Information</label>
+                    <textarea name="" id=""  class="my_input"  rows="5" placeholder="Enter your Additional Information"></textarea>
+                </div>
+                <div class="col-sm-6 mb-3">
+                    <p class="mb-0">Upload Your Resume</p>
+                    <div class="min-hi">
+                        <label for="file-u" class="file-upload d-flex flex-column">
+                            <img src="../img/file-upload.png" alt="" class="img-u">
+                            <span>Upload you Resume/CV</span>
+                        </label>
+                        <input type="file" name="" id="file-u" class="d-none">
+                    </div>
+                </div>
+                <div>
+                    <p class="font-12">By sending the request you can confirm that you accept our Terms of Service and Privacy Policy.</p>
+                </div>
+                <div class="">
+                    <div class="d-flex align-items-center gap-2 bg-dark button-min rounded-3 py-2 px-3">
+                        <img src="../img/send-1.png" alt="">
+                        <input type="submit" value="Submit Application" class="text-white bg-dark border-0 " name="" id="">
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
