@@ -165,37 +165,118 @@
     color: #000;
 }
 
-.company-titles{
+.company-titles {
     background: #fff;
     height: 130px;
     width: 100%;
 }
 
-.company-titles-heading{
+.company-titles-heading {
     padding-left: 40px;
     padding-top: 24px;
 }
 
-.company-titles-heading h6{
+.company-titles-heading h6 {
     font-weight: lighter;
     color: #1C1C1C;
     font-size: 20px;
 }
 
-.company-titles-heading p{
+.company-titles-heading p {
     font-size: 14px;
     color: #1C1C1C;
 }
 
-.company-titles-heading p i{
+.company-titles-heading p i {
     font-size: 20px;
     padding-right: 10px;
     color: #4640DE;
-    border-bottom: 5px solid rgba(70, 64, 222, 0.1); 
-    /*  */
+}
+
+.company-titles-heading hr {
+    width: 60px;
+    border: 5px solid rgba(70, 64, 222, 0.2);
+    border-radius: 10px;
 }
 
 /* Company View End */
+
+/* Admin Dashboard 2 & 3 start */
+.download-reports-btn {
+    width: 190px;
+    height: 56px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.custom-wh {
+    width: 45px;
+    height: 45px;
+}
+
+/* Admin Dashboard 2 & 3 End */
+
+/* dashboard-notification start */
+.dashboard-notification {
+    width: 100%;
+    height: calc(100dvh - 110px);
+    margin-top: 10px;
+    /* border: 1px solid white; */
+}
+
+.notification-card {
+    height: 147px;
+    width: 100%;
+}
+
+.notification-bg {
+    background: #E4E4E4;
+}
+
+.custom-notification-wh {
+    width: 60px;
+    height: 60px;
+}
+
+.img-margin{
+    margin-left: 22px;
+    margin-top: 15px;
+}
+
+.titles-margin{
+    margin-left: 22px;
+    margin-top: 27px;
+}
+
+.titles-margin h6{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.titles-margin p{
+    font-size: 14px;
+    color: #89909E;
+}
+
+.btn-notification{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.card-text{
+    padding-top: 18px;
+}
+/* dashboard-notification End */
 
 
 /* Scrollbar start */
@@ -286,6 +367,15 @@
     }
 
     /* Admin Dashboard END */
+
+    /* Admin Dashboard 2 start */
+    .download-reports-btn {
+        font-size: 12px;
+        width: 150px;
+        height: 42px;
+    }
+
+    /* Admin Dashboard 2 End */
 }
 
 @media screen and (max-width: 392px) {
