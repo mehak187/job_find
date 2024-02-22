@@ -19,6 +19,18 @@
     border: 1px solid #DAD9F9;
 }
 
+.full-time{
+    background-color: #D3F3EA;
+}
+
+.full-clr{
+    color: #2BC49B;
+}
+
+.today-clr{
+    color: #4640DE;
+}
+
 .grey-clr{
     color: #7C8493;
 }
@@ -264,6 +276,102 @@
 .table-dark{
     background-color: #000 !important;
 }
+
+.img-close{
+    width: 100%;
+    height: 100%;
+    max-width: 30px;
+    object-fit: cover;
+}
+
+.job-img{
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    background-color: #F2F2F2;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.img-u{
+    width: 100%;
+    height: 100%;
+    max-width: 20px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.min-hi{
+    border: 2px dashed #E4E4E4;
+    border-radius: 11px;
+    max-height: 135px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.button-min{
+    width: max-content;
+}
+
+.img-me{
+    width: 100%;
+    height: 100%;
+    max-width: 40px;
+    object-fit: cover;
+}
+
+.a-img{
+    border-radius: 50%;
+    padding:9px 12px;
+    border-radius: 50%;
+}
+
+.img-pro{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.j-img{
+    width: 100%;
+    height: 100%;
+    max-width: 25px;
+    object-fit: cover;
+}
+.table-main .table tr td{
+    background-color: #F2F2F2;
+}
+
+.table-main .table{
+    background-color: #fff;
+    border: 5px solid #fff
+}
+
+.table-main .table tr{
+    border: 6px solid #fff;
+}
+
+.update-img{
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    object-fit: cover;
+}
+.position-close{
+    position: absolute;
+    top: -11px;
+    right: 0;
+}
+
+.table-main2 .table tr th{
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+}
 /* ==============================
            Media Query
 ==================================== */
@@ -333,5 +441,8 @@
         width: calc(100% - 40px);
         margin: 0 20px;
         padding: 5px 0;
+    }
+    .min-hi{
+        max-height: 68px;
     }
 }
