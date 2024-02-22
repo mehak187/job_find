@@ -124,8 +124,8 @@
 
 .profile-img {
     background-color: #fff;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,13 +165,43 @@
     color: #000;
 }
 
+.company-titles{
+    background: #fff;
+    height: 130px;
+    width: 100%;
+}
+
+.company-titles-heading{
+    padding-left: 40px;
+    padding-top: 24px;
+}
+
+.company-titles-heading h6{
+    font-weight: lighter;
+    color: #1C1C1C;
+    font-size: 20px;
+}
+
+.company-titles-heading p{
+    font-size: 14px;
+    color: #1C1C1C;
+}
+
+.company-titles-heading p i{
+    font-size: 20px;
+    padding-right: 10px;
+    color: #4640DE;
+    border-bottom: 5px solid rgba(70, 64, 222, 0.1); 
+    /*  */
+}
+
 /* Company View End */
 
 
 /* Scrollbar start */
 .dashboard-table::-webkit-scrollbar {
     width: 5px;
-    height: 5px;
+    height: 51px;
 }
 
 .dashboard-table::-webkit-scrollbar-track {
