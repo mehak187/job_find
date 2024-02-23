@@ -83,12 +83,19 @@
 .center .slick-dots li {
     width: 18px
 }
+@media screen and (max-width:998px){
+    .comp-hero-admin .neg-margin {
+        position: static !important;
+    }
+    .comp-hero-admin  {
+        background-position: 40%;
+    }
+}
 @media screen and (max-width:778px){
-
-.neg-margin {
-    position: static !important;
-}
-.comp-hero {
-    background-position: 40%;
-}
+    .neg-margin {
+        position: static !important;
+    }
+    .comp-hero {
+        background-position: 40%;
+    }
 }
