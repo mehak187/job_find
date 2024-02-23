@@ -563,12 +563,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 250px;
   }
 
-  .dashboard-table1 {
-    height: calc(100dvh - 360px);
-    overflow: auto;
-    z-index: -999;
-  }
-
   .dashboard-table2 {
     height: calc(100dvh - 360px);
     overflow: auto;
@@ -581,7 +575,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 180px;
     margin-bottom: 10px;
   }
-
+  .dashboard-table1 {
+    height: calc(100dvh - 360px);
+    overflow: auto;
+    z-index: -999;
+  }
   .dashboard-table {
     height: calc(100dvh - 305px);
   }
