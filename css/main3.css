@@ -510,7 +510,7 @@ input:focus{
         top: 96px;
     }
     .profile-scroll {
-        height: calc(100dvh - 296px);
+        height: calc(100% - 0px);
     }
 }
 @media screen and (min-width: 769px){

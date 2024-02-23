@@ -487,6 +487,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .custom-height2 {
         /* margin-bottom: 40px; */
     }
+    /* .dashboard-table2 {
+        height: calc(100dvh - 360px);
+        overflow: auto;
+        padding-right: 10px;
+        width: 100%;
+        border-radius: 18px;
+    } */
+
 
     .dashboard-table {
         height: calc(100dvh - 280px);
