@@ -15,17 +15,32 @@
 .dashboard-table {
     height: calc(100dvh - 200px);
     overflow: auto;
+    padding-right: 10px;
     width: 100%;
     border-radius: 18px;
 
 }
+.dashboard-notification {
+    height:calc(100dvh - 110px);
+    padding-right:10px;
+    overflow: auto;
+}
+.dashboard-notification::-webkit-scrollbar {
+    width: 5px;
+}
 
-/* .table thead th {
-    position: static;
-    top: 0;
-    z-index: 100;
-} */
+.dashboard-notification::-webkit-scrollbar-track {
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 40px 0;
+}
 
+.dashboard-notification::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
 
 .dashboard-table-custom .table-blue {
     background-color: #000000;
@@ -310,7 +325,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* Scrollbar start */
 .dashboard-table::-webkit-scrollbar {
     width: 5px;
-    height: 51px;
 }
 
 .dashboard-table::-webkit-scrollbar-track {
@@ -318,7 +332,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 1px solid #000;
     border-radius: 5px;
     /* margin-left: 10px; */
-    margin-top: 14px;
+    margin: 40px 0;
 }
 
 .dashboard-table::-webkit-scrollbar-thumb {
