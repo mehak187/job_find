@@ -456,10 +456,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         margin-bottom: 15px;
     }
 
-    .custom-height2 {
-        /* margin-bottom: 40px; */
-    }
-
     /* .dashboard-table2 {
         height: calc(100dvh - 360px);
         overflow: auto;
