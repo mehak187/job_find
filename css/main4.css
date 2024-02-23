@@ -21,7 +21,7 @@
 }
 
 .dashboard-table1 {
-    height: calc(100dvh - 200px);
+    height: calc(100dvh - 210px);
     overflow: auto;
     padding-right: 10px;
     width: 100%;
@@ -461,7 +461,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .dashboard-table {
         height: calc(100dvh - 240px);
     }
-
+    .dashboard-table1 {
+        height: calc(100dvh - 240px);
+        overflow: auto;
+        z-index: -999;
+    }
     /* Admin Dashboard END */
 }
 
@@ -473,7 +477,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .dashboard-table {
         height: calc(100dvh - 260px);
     }
-
+    .dashboard-table1 {
+        height: calc(100dvh - 260px);
+        overflow: auto;
+        z-index: -999;
+    }
     /* Admin Dashboard END */
 }
 
@@ -483,17 +491,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .custom-height {
         margin-bottom: 15px;
     }
+    .dashboard-table1 {
+        height: calc(100dvh - 275px);
+        overflow: auto;
+        z-index: -999;
+    }
+    .dashboard-table2 {
 
     .custom-height2 {
         /* margin-bottom: 40px; */
     }
     /* .dashboard-table2 {
+
         height: calc(100dvh - 360px);
         overflow: auto;
         padding-right: 10px;
         width: 100%;
         border-radius: 18px;
-    } */
+    }
 
 
     .dashboard-table {
@@ -601,13 +616,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .custom-height2 {
         height: 250px;
     }
-
+    .dashboard-table1 {
+        height: calc(100dvh - 360px);
+        overflow: auto;
+        z-index: -999;
+    }
     .dashboard-table2 {
         height: calc(100dvh - 360px);
         overflow: auto;
         z-index: -999;
-        /* border: solid firebrick; */
-        /* margin-top: 20px; */
     }
 }
 
