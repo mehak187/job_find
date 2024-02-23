@@ -83,6 +83,7 @@
 .center .slick-dots li {
     width: 18px
 }
+
 @media screen and (max-width:998px){
     .comp-hero-admin .neg-margin {
         position: static !important;
