@@ -381,6 +381,124 @@
 input:focus{
     outline: none;
 }
+
+.bg-c{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    max-height: 180px;
+}
+
+.position-edit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.position-edit img{
+    width: 100%;
+    height: 100%;
+    max-width: 40px
+}
+.img-p{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.position-pro{
+    position: absolute;
+    top: 84px;
+    width: 100%;
+    left: 5px;
+}
+
+.profile-scroll{
+    height: calc(100dvh - 92px);
+    overflow: auto;
+}
+
+.profile-scroll::-webkit-scrollbar {
+    width: 0px;
+}
+
+.line-av{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #E5E5E5;
+    border-radius: 15px;
+}
+
+.line-av::before{
+    position: absolute;
+    content: '';
+    width: 89%;
+    height: 15px;
+    background-color: #FFB000;
+    border-radius: 15px;
+}
+.line-av1{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #E5E5E5;
+    border-radius: 15px;
+}
+
+.line-av1::before{
+    position: absolute;
+    content: '';
+    width: 69%;
+    height: 15px;
+    background-color: #FFB000;
+    border-radius: 15px;
+}
+.line-av2{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #E5E5E5;
+    border-radius: 15px;
+}
+
+.line-av2::before{
+    position: absolute;
+    content: '';
+    width: 49%;
+    height: 15px;
+    background-color: #FFB000;
+    border-radius: 15px;
+}
+.line-av3{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #E5E5E5;
+    border-radius: 15px;
+}
+
+.line-av3::before{
+    position: absolute;
+    content: '';
+    width: 29%;
+    height: 15px;
+    background-color: #FFB000;
+    border-radius: 15px;
+}
+.drop-box{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    padding: 9px;
+    border-radius: 4px;
+}
+
+.bottom-radius{
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px
+}
 /* ==============================
            Media Query
 ==================================== */
@@ -388,7 +506,12 @@ input:focus{
     
 }
 @media screen and (max-width: 1200px){
-    
+    .position-pro {
+        top: 96px;
+    }
+    .profile-scroll {
+        height: calc(100dvh - 296px);
+    }
 }
 @media screen and (min-width: 769px){
     .side-div{
