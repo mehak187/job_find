@@ -19,6 +19,10 @@
     border: 1px solid #DAD9F9;
 }
 
+.light-red-bg{
+    background-color: #FFE8E4;
+}
+
 .full-time{
     background-color: #D3F3EA;
 }
@@ -365,6 +369,7 @@
     position: absolute;
     top: -11px;
     right: 0;
+    cursor: pointer;
 }
 
 .table-main2 .table tr th{
