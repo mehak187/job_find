@@ -65,5 +65,16 @@
   width: 100%;
   max-width: 500px;
   height: 100%;
+  object-fit: cover;
+  object-position: top;
   max-height:650px;
+}
+.social-bg {
+  background: #FBFBFB;
+}
+.card-img-top {
+  max-width: 100px;
+}
+.word-break {
+  word-break: break-all;
 }

@@ -55,3 +55,40 @@
     background-size: cover;
     background-position: right;
 }
+.neg-margin {
+    bottom: -55px;
+}
+.center .slick-dots li button:before {
+    font-size: 15px;
+    color: #4640DE;
+        opacity: 0.25;
+}
+.center .slick-dots li.slick-active button:before {
+    opacity: 1;
+        font-size: 0px;
+        background: #4640DE;
+    border-radius: 50px;
+    width: 50px;
+    height: 14px;
+    top: 50%;
+    transform: translatey(-60%)
+
+}
+.center .slick-dots {
+   bottom: -60px;
+}
+.center li.slick-active {
+    width: 50px !important;
+}
+.center .slick-dots li {
+    width: 18px
+}
+@media screen and (max-width:778px){
+
+.neg-margin {
+    position: static !important;
+}
+.comp-hero {
+    background-position: 40%;
+}
+}

@@ -134,6 +134,9 @@ textarea{
     border: none;
     outline: none;
 }
+.overflow-hidden {
+    overflow: hidden;
+}
 @media screen and (max-width:577px){
     .filter-menu {
         position: absolute;
