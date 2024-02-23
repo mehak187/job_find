@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/main3.css">
+    <link rel="stylesheet" href="../css/main4.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="body-grey">
+
+    <!-- navbar  -->
+    <nav class="nav-sec bg-white shadow py-2 px-xl-5">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="max-w">
+                    <a href="dashboard.html"><img src="../img/admin-logo.png" alt="" class="img-logo"></a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between max-w2">
+                    <div class="d-md-block d-none">
+                        <h3 class="mb-0">Dashboard</h3>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end gap-3 w-width">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="me-2 list-hidden pointer" id="toggleButton">
+                                <i class="bi bi-list bg-dark text-white px-2 py-2 rounded-2"></i>
+                            </div>
+                            <div class="position-relative rel-width">
+                                <a href="notifications.html">
+                                    <img src="../img/bell (2).png" alt="" class="img-bell">
+                                    <div class="dot"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-md-block d-none">
+                            <div class="d-flex align-items-center gap-2">
+                                <h6 class="mb-0">User Name</h6>
+                                <div>
+                                    <a href="#"><img src="../img/pro_file.png" alt="" class="img-profile"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="">
+        <div class="my_container">
+            <div class="d-flex justify-content-between gap-3 position-relative">
+                <div class="side-div bg-white p-2 rounded-3 position-side" id="content">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <div class="h-100">
+                            <div class="d-md-none d-block">
+                                <a href="#"
+                                    class="d-flex flex-column align-items-center text-dark text-decoration-none"><img
+                                        src="../img/pro_file.png" alt="" class="img-profile">User Name</a>
+                            </div>
+                            <ul class="list-unstyled main-ul overflow-auto">
+                                <li><a href="dashboard.html" class="active">
+                                        <img src="../img/dashboard-1.png" alt="">
+                                        <p class="mb-0">Dashboard</p>
+                                    </a></li>
+                                <li><a href="allcompanies.html" class="">
+                                        <img src="../img/dashboard-white-building.png" alt="">
+                                        <p class="mb-0">Companies</p>
+                                    </a></li>
+                                <li><a href="allworkers.html" class="">
+                                        <img src="../img/dashboard-all-worker.png" alt="">
+                                        <p class="mb-0">All Workers</p>
+                                    </a></li>
+                                <li class="border-bottom mt-3 border-2"></li>
+                                <li class="mt-3">New Request
+                                    <a href="companiesrequest.html" class="">
+                                        <img src="../img/dashboard-white-building.png" alt="">
+                                        <p class="mb-0">Companies Request</p>
+                                    </a>
+                                    <a href="workersrequest.html" class="">
+                                        <img src="../img/dashboard-all-worker.png" alt="">
+                                        <p class="mb-0">Workers Request</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="/login.html" class="text-decoration-none text-danger log-off">
+                                <i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-side p-3">
+                    <div class="main-side2">
+                        <h5 class="ms-1">Welcome </h5>
+                        <p class="mb-0 grey-clr font-12 ms-1">Here is what's happening with your job search applications
+                            from January 01 - January 20</p>
+                        <div class="row mt-3 mx-1">
+                            <div class="col-xl-3 d-flex flex-column col-sm-6">
+                                <div class="bg-white rounded-3 px-3 py-2 shadow ">
+                                    <div>
+                                        <span class="">Total Jobs Applied</span>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <span class="fs-1 mb-0 d-block">25</span>
+                                            </div>
+                                            <div>
+                                                <i
+                                                    class="bi bi-file-earmark-text grey-bg text-dark fs-3 p-2 rounded-3 mb-0"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-3 px-3 py-2 shadow mt-3 mt-sm-auto">
+                                    <div>
+                                        <span class="">Interviewed</span>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <span class="fs-1 mb-0 d-block">10</span>
+                                            </div>
+                                            <div>
+                                                <i
+                                                    class="bi bi-file-earmark-text grey-bg text-dark fs-3 p-2 rounded-3 mb-0"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6 mt-sm-0 mt-3">
+                                <div
+                                    class="bg-white rounded-3 p-3 shadow h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div>
+                                            <span class="">Jobs Applied Status</span>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <canvas id="myDoughnutChart" class="h-100 w-100" height="100%"
+                                                    width="100%"></canvas>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p class="mb-0"><span
+                                                            class="bg-dark py-1 px-3 rounded-2 me-2"></span>60%</p>
+                                                    <p class="grey-clr font-12 mb-0">Unsuitable</p>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-0"><span
+                                                            class="grey-bg py-1 px-3 rounded-2 me-2"></span>40%</p>
+                                                    <p class="grey-clr font-12 mb-0">Interviewed</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="" class="text-decoration-none font-12">View all applications <i
+                                                class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 mt-xl-0 mt-3">
+                                <div class="bg-white rounded-3 p-3 shadow ">
+                                    <p>Upcoming Interviews</p>
+                                    <p class="font-12 mb-0"><span class="today-clr">Today,</span>24 January</p>
+                                    <div
+                                        class="d-flex align-items-center justify-content-between grey-bg p-2 rounded-3">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="../img/pro_file.png" alt="" class="img-pro">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-0">Company name here</h6>
+                                                <p class="mb-0 grey-clr font-12">HR Manager at Dropbox</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="a-img bg-dark d-block shadow"><img
+                                                    src="../img/comment-alt.png" alt="" class="img-me"></a>
+                                        </div>
+                                    </div>
+                                    <p class="font-12 mb-0 mt-3"><span class="today-clr">Next,</span>24 January</p>
+                                    <div
+                                        class="d-flex align-items-center justify-content-between grey-bg p-2 rounded-3">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="../img/pro_file.png" alt="" class="img-pro">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-0">Company name here</h6>
+                                                <p class="mb-0 grey-clr font-12">HR Manager at Dropbox</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="a-img bg-dark d-block shadow"><img
+                                                    src="../img/comment-alt.png" alt="" class="img-me"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-2 mt-3">
+                            <div class="bg-white shadow rounded-3 table-main p-3">
+                                <h6>Recent Applications History</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-nowrap px-3 py-2">01</td>
+                                                <td class="text-nowrap px-3 py-2">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../img/job2.png" alt="" class="j-img">
+                                                        <p class="mb-0">Noman</p>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap px-3 py-2">Product Designer</td>
+                                                <td class="text-nowrap px-3 py-2">20/january/2024</td>
+                                                <td class="text-nowrap px-3 py-2"><i
+                                                        class="bi bi-trash-fill text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap px-3 py-2">01</td>
+                                                <td class="text-nowrap px-3 py-2">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../img/job2.png" alt="" class="j-img">
+                                                        <p class="mb-0">Noman</p>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap px-3 py-2">Product Designer</td>
+                                                <td class="text-nowrap px-3 py-2">20/january/2024</td>
+                                                <td class="text-nowrap px-3 py-2"><i
+                                                        class="bi bi-trash-fill text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap px-3 py-2">01</td>
+                                                <td class="text-nowrap px-3 py-2">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../img/job2.png" alt="" class="j-img">
+                                                        <p class="mb-0">Noman</p>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap px-3 py-2">Product Designer</td>
+                                                <td class="text-nowrap px-3 py-2">20/january/2024</td>
+                                                <td class="text-nowrap px-3 py-2"><i
+                                                        class="bi bi-trash-fill text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap px-3 py-2">01</td>
+                                                <td class="text-nowrap px-3 py-2">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../img/job2.png" alt="" class="j-img">
+                                                        <p class="mb-0">Noman</p>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap px-3 py-2">Product Designer</td>
+                                                <td class="text-nowrap px-3 py-2">20/january/2024</td>
+                                                <td class="text-nowrap px-3 py-2"><i
+                                                        class="bi bi-trash-fill text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap px-3 py-2">01</td>
+                                                <td class="text-nowrap px-3 py-2">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../img/job2.png" alt="" class="j-img">
+                                                        <p class="mb-0">Noman</p>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap px-3 py-2">Product Designer</td>
+                                                <td class="text-nowrap px-3 py-2">20/january/2024</td>
+                                                <td class="text-nowrap px-3 py-2"><i
+                                                        class="bi bi-trash-fill text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap px-3 py-2">01</td>
+                                                <td class="text-nowrap px-3 py-2">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../img/job2.png" alt="" class="j-img">
+                                                        <p class="mb-0">Noman</p>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap px-3 py-2">Product Designer</td>
+                                                <td class="text-nowrap px-3 py-2">20/january/2024</td>
+                                                <td class="text-nowrap px-3 py-2"><i
+                                                        class="bi bi-trash-fill text-danger"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="text-decoration-none">View all applications history <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Data for the doughnut chart
+        var data = {
+            labels: [],
+            datasets: [{
+                data: [60, 40],
+                backgroundColor: ['#D9D8F8', '#000'],
+                hoverBackgroundColor: ['#D9D8F8', '#000']
+            }]
+        };
+
+        // Get the canvas element
+        var ctx = document.getElementById('myDoughnutChart').getContext('2d');
+
+        // Initialize the doughnut chart
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: data
+        });
+    </script>
+</body>
+
+</html>
