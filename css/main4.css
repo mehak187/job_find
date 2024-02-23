@@ -160,6 +160,34 @@
     padding-left: 10px;
 }
 
+.box-check-in{
+    width: 380px;
+    height: 56px;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box-check-in i {
+    font-size: 20px;
+    color: #c3c6cc;
+    cursor: pointer;
+}
+
+.box-check-in input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
 /* Company View Start */
 
 .profile-img {
@@ -456,6 +484,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         margin-bottom: 15px;
     }
 
+    .custom-height2 {
+        /* margin-bottom: 40px; */
+    }
     /* .dashboard-table2 {
         height: calc(100dvh - 360px);
         overflow: auto;
@@ -463,6 +494,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         width: 100%;
         border-radius: 18px;
     } */
+
 
     .dashboard-table {
         height: calc(100dvh - 280px);
@@ -545,6 +577,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         font-size: 12px;
         width: 150px;
         height: 42px;
+    }
+
+    .box-check-in {
+        width: 100%;
+        min-width: 100px;
+        height: 40px;
+    }
+
+    .box-check-in i {
+        padding-left: 20px;
+    }
+
+    .box-check-in input::placeholder {
+        font-size: 12px;
     }
 
     /* Admin Dashboard 2 End */
