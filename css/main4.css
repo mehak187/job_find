@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Admin Dashboard Start */
-
 .custom-height {
     width: 100%;
     height: 100px;
@@ -31,8 +29,6 @@
 .custom-height2 {
     width: 100%;
     height: 230px;
-    /* border: 2px solid rebeccapurple; */
-    /* margin-bottom: 10px; */
 }
 
 .dashboard-table2 {
@@ -41,7 +37,6 @@
     padding-right: 10px;
     width: 100%;
     border-radius: 18px;
-    /* margin-top: 20px; */
 }
 
 .dashboard-notification {
@@ -160,7 +155,7 @@
     padding-left: 10px;
 }
 
-.box-check-in{
+.box-check-in {
     width: 380px;
     height: 56px;
     background: #f2f2f2;
@@ -187,8 +182,6 @@
     font-size: 18px;
     padding-left: 10px;
 }
-
-/* Company View Start */
 
 .profile-img {
     background-color: #fff;
@@ -267,9 +260,6 @@
     border-radius: 10px;
 }
 
-/* Company View End */
-
-/* Admin Dashboard 2 & 3 start */
 .download-reports-btn {
     width: 190px;
     height: 56px;
@@ -330,10 +320,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 45px;
 }
 
-/* Admin Dashboard 2 & 3 End */
-
-/* dashboard-notification start */
-
 .bg-notification {
     background-color: rgba(228, 228, 228, 0.5);
 }
@@ -342,7 +328,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     height: calc(100dvh - 110px);
     margin-top: 10px;
-    /* border: 1px solid white; */
 }
 
 .notification-card {
@@ -379,17 +364,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
 }
 
-/* .max-custom-width{
-    max-width: 800px;
-} */
-
 .time-notification {
     color: #7c8493;
 }
 
-/* dashboard-notification End */
-
-/* Scrollbar start */
 .dashboard-table::-webkit-scrollbar {
     width: 5px;
 }
@@ -398,7 +376,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: #000;
     border: 1px solid #000;
     border-radius: 5px;
-    /* margin-left: 10px; */
     margin: 40px 0;
 }
 
@@ -417,7 +394,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: #000;
     border: 1px solid #000;
     border-radius: 5px;
-    /* margin-left: 10px; */
     margin: 40px 0;
 }
 
@@ -436,7 +412,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: #000;
     border: 1px solid #000;
     border-radius: 5px;
-    /* margin-left: 10px; */
     margin: 40px 0;
 }
 
@@ -447,13 +422,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-block: 55px;
 }
 
-/* Scrollbar end */
-
-/* Admin Dashboard End */
-
 @media screen and (max-width: 1211px) {
 
-    /* Admin Dashboard Start */
     .custom-height {
         height: 130px;
     }
@@ -461,12 +431,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .dashboard-table {
         height: calc(100dvh - 240px);
     }
+
     .dashboard-table1 {
         height: calc(100dvh - 240px);
         overflow: auto;
         z-index: -999;
     }
-    /* Admin Dashboard END */
 }
 
 @media screen and (max-width: 1107.5px) {
@@ -477,45 +447,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .dashboard-table {
         height: calc(100dvh - 260px);
     }
+
     .dashboard-table1 {
         height: calc(100dvh - 260px);
         overflow: auto;
         z-index: -999;
     }
-    /* Admin Dashboard END */
 }
 
 @media screen and (max-width: 992px) {
-
-    /* Admin Dashboard Start */
     .custom-height {
         margin-bottom: 15px;
     }
+
     .dashboard-table1 {
         height: calc(100dvh - 275px);
         overflow: auto;
         z-index: -999;
     }
-    .dashboard-table2 {
-
-    .custom-height2 {
-        /* margin-bottom: 40px; */
-    }
-    /* .dashboard-table2 {
-
-        height: calc(100dvh - 360px);
-        overflow: auto;
-        padding-right: 10px;
-        width: 100%;
-        border-radius: 18px;
-    }
-
-
-    .dashboard-table {
-        height: calc(100dvh - 280px);
-    }
-
-    /* Admin Dashboard END */
 }
 
 @media screen and (max-width: 855px) {
@@ -561,7 +510,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media screen and (max-width: 546px) {
 
-    /* Admin Dashboard Start */
     .custom-heading h3 {
         font-size: 20px;
     }
@@ -579,9 +527,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         font-size: 11px;
     }
 
-    /* Admin Dashboard END */
-
-    /* Admin Dashboard 2 start */
     .download-reports-btn {
         font-size: 12px;
         width: 150px;
@@ -607,8 +552,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .box-check-in input::placeholder {
         font-size: 12px;
     }
-
-    /* Admin Dashboard 2 End */
 }
 
 @media screen and (max-width: 457px) {
@@ -616,11 +559,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .custom-height2 {
         height: 250px;
     }
+
     .dashboard-table1 {
         height: calc(100dvh - 360px);
         overflow: auto;
         z-index: -999;
     }
+
     .dashboard-table2 {
         height: calc(100dvh - 360px);
         overflow: auto;
@@ -657,10 +602,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         font-size: 12px;
     }
 
-    /* Admin Dashboard END */
-
-    /* Dashboard Notification Start */
-
     .titles-text h6 {
         font-size: 14px;
     }
@@ -678,8 +619,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         height: 25px;
         font-size: 12px;
     }
-
-    /* Dashboard Notification End */
 }
 
 @media screen and (max-width: 367px) {
