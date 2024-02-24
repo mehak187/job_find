@@ -68,7 +68,7 @@
                             </div>
                             <ul class="list-unstyled main-ul overflow-auto">
                                 <li><a href="dashboard.html" class="">
-                                        <img src="../img/dashboard-1.png" alt="">
+                                        <img src="../img/dashboard.png" alt="">
                                         <p class="mb-0">Dashboard</p>
                                     </a></li>
                                 <li><a href="publicprofile.html" class="">
@@ -84,7 +84,7 @@
                                         <p class="mb-0">My Applications</p>
                                     </a></li>
                                 <li class=""><a href="checkinout.html" class="active">
-                                        <img src="../img/time-fast.png" alt="">
+                                        <img src="../img/time-fast-1.png" alt="">
                                         <p class="mb-0">Check-in-Out-Duty</p>
                                     </a></li>
                                 <li class="border-bottom mt-3 border-2"></li>
@@ -105,47 +105,51 @@
 
                 <div class="main-side p-3">
                     <div>
-                        <div class="checktime-top">
-                            <h3>Already Check In, Naseeb</h3>
-                            <p>Monthly Job Check-In History</p>
+                        <div class="row checktime-top">
+                            <div class="col-lg-6 col-12">
+                                <h3>Already Check In, Naseeb</h3>
+                                <p class="mb-0">Monthly Job Check-In History</p>
+                            </div>
+
+                            <div class="col-lg-6 col-12 flex-custom d-flex justify-content-lg-end justify-content-center">
+                                <div class="download-reports-checktime-calendar my-1 mx-2">
+                                    <input type="date" id="date" class="border-0 bg-transparent">
+                                    <label for="date">
+                                        <img src="../img/calendar-clock.png" alt=""
+                                            class="bg-dark p-2 rounded-3 img-cal">
+                                    </label>
+                                </div>
+                                <div class="download-reports-checktime my-1">
+                                    <a href="" class="text-decoration-none text-white"><i
+                                            class="fa-solid fa-file-arrow-down pe-2"></i>Download Reports</a>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="tab-content-table">
-                            <div class="main-tabb border-2 border-bottom row justify-content-between align-items-center">
-                                <div class="col-7 border">
-                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active fs-custom" id="pills-home-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-home" type="button" role="tab"
-                                                aria-controls="pills-home" aria-selected="true">All (30)</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-profile" type="button" role="tab"
-                                                aria-controls="pills-profile" aria-selected="false">All Check In-time
-                                                (30)</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                                data-bs-target="#pills-contact" type="button" role="tab"
-                                                aria-controls="pills-contact" aria-selected="false">All Check out-time
-                                                (30)</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-5 d-flex justify-content-end border">
-                                    <div class="download-reports-checktime-calendar my-1 mx-2">
-                                        <input type="date" id="date" class="border-0 bg-transparent">
-                                        <label for="date">
-                                            <img src="../img/calendar-clock.png" alt=""
-                                                class="bg-dark p-2 rounded-3 img-cal">
-                                        </label>
-                                    </div>
-                                    <div class="download-reports-checktime my-1">
-                                        <a href="" class="text-decoration-none text-white"><i
-                                                class="fa-solid fa-file-arrow-down pe-2"></i>Download Reports</a>
-                                    </div>
-                                </div>
+                            <div class="main-tabb border-2 border-bottom">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active fs-custom-checktime" id="pills-home-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">All (30)</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fs-custom-checktime" id="pills-profile-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+                                            role="tab" aria-controls="pills-profile" aria-selected="false">All Check
+                                            In-time
+                                            (30)</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fs-custom-checktime" id="pills-contact-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+                                            role="tab" aria-controls="pills-contact" aria-selected="false">All Check
+                                            out-time
+                                            (30)</button>
+                                    </li>
+                                </ul>
+
                             </div>
                             <div class="tab-content " id="pills-tabContent">
 
