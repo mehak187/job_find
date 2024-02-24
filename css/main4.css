@@ -18,6 +18,15 @@
   border-radius: 18px;
 }
 
+.checkinout-table{
+  height: calc(100dvh - 220px);
+  overflow: auto;
+  padding-right: 10px;
+  width: 100%;
+  border-radius: 18px;
+  margin-top: 10px;
+}
+
 .checktime-table {
   height: calc(100dvh - 230px);
   overflow: auto;
@@ -37,6 +46,12 @@
 .custom-height2 {
   width: 100%;
   height: 210px;
+}
+
+.custom-height3 {
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid rebeccapurple; */
 }
 
 .dashboard-table2 {
@@ -176,7 +191,7 @@
 }
 
 .box-check-in i {
-  font-size: 20px;
+  font-size: 18px;
   color: #c3c6cc;
   cursor: pointer;
 }
@@ -188,6 +203,38 @@
   outline: none;
   background: none;
   font-size: 18px;
+  padding-left: 10px;
+}
+
+.box-check-in input::placeholder{
+  font-size: 16px;
+}
+
+.box-check-inout {
+  width: 350px;
+  height: 43px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.box-check-inout i {
+  font-size: 16px;
+  color: #c3c6cc;
+  cursor: pointer;
+}
+
+.box-check-inout input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
   padding-left: 10px;
 }
 
@@ -422,14 +469,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .dashboard-table::-webkit-scrollbar,
 .checktime-table::-webkit-scrollbar,
 .dashboard-table1::-webkit-scrollbar,
-.dashboard-table2::-webkit-scrollbar {
+.dashboard-table2::-webkit-scrollbar,
+.checkinout-table::-webkit-scrollbar {
   width: 5px;
 }
 
 .dashboard-table::-webkit-scrollbar-track,
 .checktime-table::-webkit-scrollbar-track,
 .dashboard-table1::-webkit-scrollbar-track,
-.dashboard-table2::-webkit-scrollbar-track {
+.dashboard-table2::-webkit-scrollbar-track,
+.checkinout-table::-webkit-scrollbar-track {
   background: #000;
   border: 1px solid #000;
   border-radius: 5px;
@@ -439,49 +488,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .dashboard-table::-webkit-scrollbar-thumb,
 .checktime-table::-webkit-scrollbar-thumb,
 .dashboard-table1::-webkit-scrollbar-thumb,
-.dashboard-table2::-webkit-scrollbar-thumb {
+.dashboard-table2::-webkit-scrollbar-thumb,
+.checkinout-table::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 5px;
   border: 1px solid #000;
   margin-block: 55px;
 }
-
-/* 
-.dashboard-table1::-webkit-scrollbar {
-  width: 5px;
-}
-
-.dashboard-table1::-webkit-scrollbar-track {
-  background: #000;
-  border: 1px solid #000;
-  border-radius: 5px;
-  margin: 40px 0;
-}
-
-.dashboard-table1::-webkit-scrollbar-thumb {
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid #000;
-  margin-block: 55px;
-} 
-
-.dashboard-table2::-webkit-scrollbar {
-  width: 5px;
-}
-
-.dashboard-table2::-webkit-scrollbar-track {
-  background: #000;
-  border: 1px solid #000;
-  border-radius: 5px;
-  margin: 40px 0;
-}
-
-.dashboard-table2::-webkit-scrollbar-thumb {
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid #000;
-  margin-block: 55px;
-} */
 
 @media screen and (max-width: 1211px) {
   .custom-height {
@@ -496,6 +509,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: calc(100dvh - 240px);
     overflow: auto;
     z-index: -999;
+  }
+
+  .checkinout-custom-display{
+    flex-direction: column;
+  }
+
+  .custom-height3{
+    height: 100px;
+  }
+
+  .justify-content-custom{
+    justify-content: center;
+  }
+
+  .checkinout-table{
+    height: calc(100dvh - 250px);
+    margin-top: 20px;
   }
 }
 
@@ -556,6 +586,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .checktime-table {
     height: calc(100dvh - 265px);
+  }
+
+  .checkinout-table{
+    height: calc(100dvh - 250px);
   }
 
 }
@@ -622,6 +656,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .checktime-top p {
     font-size: 14px;
+  }
+
+  .box-check-inout{
+    height: 35px;
+    padding: 0;
+    width: 300px;
+  }
+
+  .box-check-inout i {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+  
+  .box-check-inout input {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:576px)  {
+  .checkinout-table{
+    height: calc(100dvh - 270px);
+  }
+
+  .custom-height3{
+    height: 135px;
   }
 }
 
@@ -696,12 +755,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .fs-custom-checktime {
     font-size: 10px;
   }
+
+  .checkinout-table{
+    height: calc(100dvh - 275px);
+  }
 }
 
 @media screen and (max-width:409px) {
 
   .checktime-table{
     height: calc(100dvh - 295px);
+  }
+
+  .box-check-inout{
+    width: 260px;
   }
 
 }
@@ -786,6 +853,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .checktime-table{
     height: calc(100dvh - 330px);
+  }
+
+  .box-check-inout{
+    width: 210px;
   }
 
 }
