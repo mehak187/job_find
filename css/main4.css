@@ -54,7 +54,7 @@
   /* border: 1px solid rebeccapurple; */
 }
 
-.dashboard-table2 {
+.dashboard-table2, .myapplication-table {
   height: calc(100dvh - 330px);
   overflow: auto;
   padding-right: 10px;
@@ -466,6 +466,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #1c1c1c;
 }
 
+.custom-application-heading h3{
+  font-size: 20px;
+}
+
+.custom-application-heading p{
+  font-size: 14px;
+}
+
 .dashboard-table::-webkit-scrollbar,
 .checktime-table::-webkit-scrollbar,
 .dashboard-table1::-webkit-scrollbar,
@@ -562,9 +570,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 15px;
   }
 
-  .custom-height2 {
-    margin-bottom: 40px;
+  .custom-height2{
+  height: 220px;
+
   }
+  
 
   .dashboard-table2 {
     height: calc(100dvh - 360px);
@@ -682,6 +692,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .custom-height3{
     height: 135px;
   }
+
+  .myapplication-table {
+    height: calc(100dvh - 340px);
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 546px) {
@@ -758,6 +773,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .checkinout-table{
     height: calc(100dvh - 275px);
+  }
+
+  .myapplication-table {
+    height: calc(100dvh - 360px);
+    margin-top: 0;
   }
 }
 
