@@ -19,8 +19,7 @@
 }
 
 .checktime-table {
-  border: solid black;
-  height: calc(100dvh - 280px);
+  height: calc(100dvh - 230px);
   overflow: auto;
   padding-right: 10px;
   width: 100%;
@@ -304,16 +303,16 @@
 }
 
 .download-reports-checktime {
-    width: 160px;
-    height: 43px;
-    font-size: 13px;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    cursor: pointer;
-  }
+  width: 160px;
+  height: 43px;
+  font-size: 13px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 .download-reports-btn-application {
   width: 190px;
@@ -324,6 +323,10 @@
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.fs-custom-checktime {
+  font-size: 13px;
 }
 
 .input-container input {
@@ -402,8 +405,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .checktime-top {
-  border: solid rebeccapurple;
-  height: 90px;
+  /* border: 1px solid rebeccapurple; */
+  height: 70px;
   width: 100%;
 }
 
@@ -512,6 +515,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
+@media screen and (max-width:1036px) {
+
+  .checktime-top {
+    height: 100px;
+  }
+
+  .checktime-table {
+    height: calc(100dvh - 260px);
+  }
+
+}
+
 @media screen and (max-width: 992px) {
   .custom-height {
     margin-bottom: 15px;
@@ -534,6 +549,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     overflow: auto;
     z-index: -999;
   }
+
+  .checktime-top {
+    height: 110px;
+  } 
+
+  .checktime-table {
+    height: calc(100dvh - 265px);
+  }
+
 }
 
 @media screen and (max-width: 855px) {
@@ -573,6 +597,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .dashboard-table2 tr td {
     font-size: 12px;
+  }
+
+  .img-cal {
+    width: 30px;
+    height: 30px;
+  }
+
+  .download-reports-checktime-calendar {
+    font-size: 11px;
+    width: 140px;
+    height: 35px;
+  }
+
+  .download-reports-checktime {
+    font-size: 11px;
+    width: 140px;
+    height: 35px;
+  }
+
+  .checktime-top h3 {
+    font-size: 20px;
+  }
+
+  .checktime-top p {
+    font-size: 14px;
   }
 }
 
@@ -619,6 +668,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .box-check-in input::placeholder {
     font-size: 12px;
   }
+
+  .fs-custom-checktime {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 457px) {
@@ -631,6 +684,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     overflow: auto;
     z-index: -999;
   }
+
+  .checktime-top h3 {
+    font-size: 17px;
+  }
+
+  .checktime-top p {
+    font-size: 13px;
+  }
+
+  .fs-custom-checktime {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:409px) {
+
+  .checktime-table{
+    height: calc(100dvh - 295px);
+  }
+
 }
 
 @media screen and (max-width: 392px) {
@@ -690,6 +763,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 25px;
     font-size: 12px;
   }
+
 }
 
 @media screen and (max-width: 367px) {
@@ -700,4 +774,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .dashboard-table2 {
     height: calc(100dvh - 370px);
   }
+
+  .checktime-top {
+    height: 150px;
+  }
+
+  .flex-custom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checktime-table{
+    height: calc(100dvh - 330px);
+  }
+
 }
