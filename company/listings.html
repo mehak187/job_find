@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/main3.css">
+    <link rel="stylesheet" href="../css/main4.css">
+    <title>Employee || Template</title>
+</head>
+
+<body class="body-grey">
+
+    <!-- navbar  -->
+    <nav class="nav-sec bg-white shadow py-2 px-xl-5">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="max-w">
+                    <a href="dashboard.html"><img src="../img/admin-logo.png" alt="" class="img-logo"></a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between max-w2">
+                    <div class="d-md-block d-none">
+                        <h3 class="mb-0">Dashboard</h3>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end gap-3 w-width">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="me-2 list-hidden pointer" id="toggleButton">
+                                <i class="bi bi-list bg-dark text-white px-2 py-2 rounded-2"></i>
+                            </div>
+                            <div class="position-relative rel-width">
+                                <a href="notifications.html">
+                                    <img src="../img/bell (2).png" alt="" class="img-bell">
+                                    <div class="dot"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-md-block d-none">
+                            <div class="d-flex align-items-center gap-2">
+                                <h6 class="mb-0">User Name</h6>
+                                <div>
+                                    <a href="#"><img src="../img/pro_file.png" alt="" class="img-profile"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="">
+        <div class="my_container">
+            <div class="d-flex justify-content-between gap-3 position-relative">
+                <div class="side-div bg-white p-2 rounded-3 position-side" id="content">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <div class="h-100">
+                            <div class="d-md-none d-block">
+                                <a href="#"
+                                    class="d-flex flex-column align-items-center text-dark text-decoration-none"><img
+                                        src="../img/pro_file.png" alt="" class="img-profile">User Name</a>
+                            </div>
+                            <ul class="list-unstyled main-ul overflow-auto">
+                                <li><a href="dashboard.html" class="">
+                                        <img src="../img/dashboard.png" alt="">
+                                        <p class="mb-0">Dashboard</p>
+                                    </a></li>
+                                <li><a href="publicprofile.html" class="">
+                                        <img src="../img/dashboard-white-building.png" alt="">
+                                        <p class="mb-0">Company Profile</p>
+                                    </a></li>
+                                <li><a href="messages.html" class="">
+                                        <img src="../img/messages.png" alt="">
+                                        <p class="mb-0">Messages</p>
+                                    </a></li>
+                                    <li><a href="allapplications.html" class="">
+                                        <img src="../img/dashboard-all-worker.png" alt="">
+                                        <p class="mb-0">All Applications</p>
+                                    </a></li>
+                                    <li><a href="listings.html" class="active">
+                                        <img src="../img/application-1.png" alt="">
+                                        <p class="mb-0">Shift Listings</p>
+                                    </a></li>
+                                <li class="border-bottom mt-3 border-2"></li>
+                                <li class="mt-3">Settings
+                                    <a href="settings.html" class="">
+                                        <img src="../img/settings.png" alt="">
+                                        <p class="mb-0">settings</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none text-danger log-off">
+                                <i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-side p-3">
+                    <div>
+                        <div class="checktime-top">
+                            <h3>Already Check In, Naseeb</h3>
+                            <p>Monthly Job Check-In History</p>
+                        </div>
+
+                        <div class="tab-content-table">
+                            <div class="main-tabb border-2 border-bottom row justify-content-between align-items-center">
+                                <div class="col-7 border">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active fs-custom" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true">All (30)</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">All Check In-time
+                                                (30)</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-contact" type="button" role="tab"
+                                                aria-controls="pills-contact" aria-selected="false">All Check out-time
+                                                (30)</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-5 d-flex justify-content-end border">
+                                    <div class="download-reports-checktime-calendar my-1 mx-2">
+                                        <input type="date" id="date" class="border-0 bg-transparent">
+                                        <label for="date">
+                                            <img src="../img/calendar-clock.png" alt=""
+                                                class="bg-dark p-2 rounded-3 img-cal">
+                                        </label>
+                                    </div>
+                                    <div class="download-reports-checktime my-1">
+                                        <a href="" class="text-decoration-none text-white"><i
+                                                class="fa-solid fa-file-arrow-down pe-2"></i>Download Reports</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content " id="pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="checktime-table">
+                                        <div class="bg-white rounded-4 table-responsive">
+                                            <table class="table dashboard-table-custom mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            #</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Company Name</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Date</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Check-in time</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Check-out time
+                                                        </th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Short time
+                                                        </th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Status
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="">
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">30 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">900 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">50 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="checktime-table">
+                                        <div class="bg-white rounded-4 table-responsive">
+                                            <table class="table dashboard-table-custom mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            #</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Company Name</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Date</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Check-in time</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Check-out time
+                                                        </th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Short time
+                                                        </th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Status
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="">
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">30 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">900 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">50 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab" tabindex="0">
+                                    <div class="checktime-table">
+                                        <div class="bg-white rounded-4 table-responsive">
+                                            <table class="table dashboard-table-custom mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            #</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Company Name</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Date</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Check-in time</th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Check-out time
+                                                        </th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Short time
+                                                        </th>
+                                                        <th
+                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
+                                                            Status
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="">
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">30 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">900 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">50 mints
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
+                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
+                                                        <td class="text-center p-2 text-nowrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
