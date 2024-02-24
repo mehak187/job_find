@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/main2.css">
     <link rel="stylesheet" href="../css/main3.css">
     <link rel="stylesheet" href="../css/main4.css">
-    <title>Employee || Template</title>
+    <title>Employee || Dashboard</title>
 </head>
 
 <body class="body-grey">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-between max-w2">
                     <div class="d-md-block d-none">
-                        <h3 class="mb-0">Add Experience</h3>
+                        <h3 class="mb-0">Dashboard</h3>
                     </div>
                     <div class="d-flex align-items-center justify-content-end gap-3 w-width">
                         <div class="d-flex align-items-center justify-content-end">
@@ -102,88 +102,38 @@
                 </div>
                 <div class="main-side p-3">
                     <div class="main-side2  pe-3">
-                        <form action="">
-                            <div class="row my-3 mx-1">
-                                <div class="col-xl-9">
-                                    <div class="row">
-                                        <div class="col-sm-6 mb-3">
-                                            <div>
-                                                <label for="">University Name</label>
-                                                <input type="text" name="" id="" class="my_input" placeholder="Enter your university name">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mb-3">
-                                            <div>
-                                                <label for="">Degree Name</label>
-                                                <input type="text" name="" id="" class="my_input" placeholder="Enter your degree name">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mb-3">
-                                            <div>
-                                                <label for="">Company Name</label>
-                                                <input type="text" name="" id="" class="my_input" placeholder="Enter your Company Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mb-3">
-                                            <div>
-                                                <label for="">Location</label>
-                                                <input type="text" name="" id="" class="my_input" placeholder="Enter Location">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-end">
-                                        <div class="col-sm-6 mb-3">
-                                            <div>
-                                                <label for="">Start Date</label>
-                                                <select name="" class="my_input py-2" id="">
-                                                    <option value="">Month</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mb-3">
-                                            <div>
-                                                <select name="" class="my_input py-2" id="">
-                                                    <option value="">Year</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mb-3">
-                                            <div>
-                                                <label for="">End Date</label>
-                                                <select name="" class="my_input py-2" id="">
-                                                    <option value="">Month</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mb-3">
-                                            <div>
-                                                <select name="" class="my_input py-2" id="">
-                                                    <option value="">Year</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 mb-3">
-                                            <div>
-                                                <label for="">Description</label>
-                                                <textarea name="" id="" class="my_input" rows="5" placeholder="Type here"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="submit" value="Save Education" class="bg-dark text-white border-0 rounded-3 py-2 px-4">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        <h5 class="ms-1">Welcome Naseeb</h5>
+                        <p class="mb-0 grey-clr font-12 ms-1">Here is what's happening with your job search applications from January 01 - January 20</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+        // Data for the doughnut chart
+        var data = {
+            labels: [],
+            datasets: [{
+                data: [60,40],
+                backgroundColor: ['#D9D8F8', '#000'],
+                hoverBackgroundColor: ['#D9D8F8', '#000']
+            }]
+        };
+
+        // Get the canvas element
+        var ctx = document.getElementById('myDoughnutChart').getContext('2d');
+
+        // Initialize the doughnut chart
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: data
+        });
+    </script>
 </body>
 
 </html>
