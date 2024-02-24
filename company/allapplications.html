@@ -80,11 +80,11 @@
                                         <img src="../img/messages.png" alt="">
                                         <p class="mb-0">Messages</p>
                                     </a></li>
-                                    <li><a href="allapplications.html" class="active">
+                                <li><a href="allapplications.html" class="active">
                                         <img src="../img/dashboard-worker-light.png" alt="">
                                         <p class="mb-0">All Applications</p>
                                     </a></li>
-                                    <li><a href="listings.html" class="">
+                                <li><a href="listings.html" class="">
                                         <img src="../img/application.png" alt="">
                                         <p class="mb-0">Shift Listings</p>
                                     </a></li>
@@ -104,7 +104,8 @@
                                 <p class="mb-0">All Applications</p>
                             </div>
 
-                            <div class="col-lg-6 col-12 flex-custom d-flex justify-content-lg-end justify-content-center">
+                            <div
+                                class="col-lg-6 col-12 flex-custom d-flex justify-content-lg-end justify-content-center">
                                 <div class="download-reports-checktime-calendar my-1 mx-2">
                                     <input type="date" id="date" class="border-0 bg-transparent">
                                     <label for="date">
@@ -131,7 +132,7 @@
                                         <button class="nav-link fs-custom-checktime" id="pills-profile-tab"
                                             data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
                                             role="tab" aria-controls="pills-profile" aria-selected="false">
-                                            Declined    
+                                            Declined
                                         </button>
                                     </li>
                                 </ul>
@@ -151,143 +152,350 @@
                                                             #</th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Company Name</th>
+                                                            Full Name</th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Date</th>
+                                                            Job Role</th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Check-in time</th>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Check-out time
+                                                            Applied Date
                                                         </th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Short time
+                                                            Hiring Stage
                                                         </th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Status
+                                                            Action
                                                         </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody class="">
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                                <a href=""
+                                                                    class="green lgreen btn-dash me-2">Accepted</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">30 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">900 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="green lgreen btn-dash me-2">Accepted</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">50 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="green lgreen btn-dash me-2">Accepted</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href=""
+                                                                    class="green lgreen btn-dash me-2">Accepted</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href=""
+                                                                    class="green lgreen btn-dash me-2">Accepted</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href=""
+                                                                    class="green lgreen btn-dash me-2">Accepted</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href=""
+                                                                    class="green lgreen btn-dash me-2">Accepted</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center align-middle">
+                                                        <td class="text-center p-2 text-nowrap">01</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
+                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href=""
+                                                                    class="green lgreen btn-dash me-2">Accepted</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -306,294 +514,322 @@
                                                             #</th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Company Name</th>
+                                                            Full Name</th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Date</th>
+                                                            Job Role</th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Check-in time</th>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Check-out time
+                                                            Applied Date
                                                         </th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Short time
+                                                            Hiring Stage
                                                         </th>
                                                         <th
                                                             class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Status
+                                                            Action
                                                         </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody class="">
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">30 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">900 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">50 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div
-
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                    aria-labelledby="pills-contact-tab" tabindex="0">
-                                    <div class="checktime-table">
-                                        <div class="bg-white rounded-4 table-responsive">
-                                            <table class="table dashboard-table-custom mb-0">
-                                                <thead>
-                                                    <tr>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            #</th>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Company Name</th>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Date</th>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Check-in time</th>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Check-out time
-                                                        </th>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Short time
-                                                        </th>
-                                                        <th
-                                                            class="custom-font-weight text-white p-3 table-blue text-center text-nowrap">
-                                                            Status
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="">
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">30 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">900 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
-
                                                     <tr class="text-center align-middle">
                                                         <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
+                                                        <td class="text-center p-2 text-nowrap"><img
+                                                                src="/img/client1.png" alt="Logo"
+                                                                class="me-2 custom-wh">Nomand</td>
                                                         <td class="text-center p-2 text-nowrap">01/24/2024</td>
                                                         <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">50 mints
-                                                        </td>
-                                                        <td class="text-center p-2 text-nowrap">
+                                                        <td class="text-center p-2 text-nowrap text-danger">
                                                             <div
                                                                 class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                                <a href=""
+                                                                    class="red lred btn-dash me-2">Declined</a>
                                                             </div>
                                                         </td>
-                                                    </tr>
-
-                                                    <tr class="text-center align-middle">
-                                                        <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
-                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
-                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
-                                                            <div
-                                                                class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="green lgreen btn-dash me-2">Active</a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr class="text-center align-middle">
-                                                        <td class="text-center p-2 text-nowrap">01</td>
-                                                        <td class="text-center p-2 text-nowrap"><img src="/img/job2.png"
-                                                                alt="Logo" class="me-2 custom-wh">Nomand</td>
-                                                        <td class="text-center p-2 text-nowrap">01/24/2024</td>
-                                                        <td class="text-center p-2 text-nowrap">10:00AM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger">06:20PM</td>
-                                                        <td class="text-center p-2 text-nowrap text-danger"></td>
-                                                        <td class="text-center p-2 text-nowrap">
-                                                            <div
-                                                                class="d-flex justify-content-center align-items-center">
-                                                                <a href="" class="red lred btn-dash me-2">Incomplete</a>
+                                                        <td class="text-center p-2 text-nowrap text-danger">
+                                                            <div class="d-flex align-items-center justify-content-center">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center">
+                                                                    <a href=""
+                                                                        class="gry text-black py-2 px-3 text-decoration-none rounded-3 me-2">View Application</a>
+                                                                </div>
+                                                                <i class="bi bi-trash-fill text-danger"></i>
                                                             </div>
                                                         </td>
                                                     </tr>
