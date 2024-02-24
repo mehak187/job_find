@@ -84,12 +84,21 @@
     width: 18px
 }
 
-@media screen and (max-width:998px){
+@media screen and (max-width:992px){
     .comp-hero-admin .neg-margin {
         position: static !important;
     }
     .comp-hero-admin  {
         background-position: 40%;
+    }
+    .position-pro {
+        position: static;
+        top: 0 !important;
+        padding: 10px 20px;
+    }
+    .bg-c {
+        height: 210px !important;
+        max-height: 210px !important;
     }
 }
 @media screen and (max-width:778px){
@@ -98,5 +107,15 @@
     }
     .comp-hero {
         background-position: 40%;
+    }
+    .bg-c {
+        height: 270px !important;
+        max-height: 270px !important;
+    }
+}
+@media screen and (max-width:400px){
+    .bg-c {
+        height: 320px !important;
+        max-height: 320px !important;
     }
 }
