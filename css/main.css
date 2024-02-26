@@ -122,6 +122,9 @@ body {
 .skybtm{
     border-bottom: solid 10px #3083E2;
 }
+.grybtm{
+    border-bottom: solid 2px #9c9c9c;
+}
 textarea{
     resize: none;
 }
@@ -143,7 +146,9 @@ textarea{
 .overflow-hidden {
     overflow: hidden;
 }
-
+.nowrap{
+    text-wrap: nowrap !important;
+}
 @media screen and (max-width:577px){
     .filter-menu {
         position: absolute;
