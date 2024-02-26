@@ -83,7 +83,87 @@
 .center .slick-dots li {
     width: 18px
 }
+/* ------chat-------- */
+.chat-det p {
+    display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
 
+.chat-person {
+    width: 400px;
+    margin-right: 10px;
+}
+
+
+.chat-open-person {
+    max-width: 50px;
+     margin-right: 10px;
+ }
+ 
+ .receive {
+     width: 50%;
+ }
+ .send {
+     width: 50%;
+     margin-left: 50%;
+ }
+ .chat-right {
+     height: calc(100dvh - 100px);
+ }
+ .chat-left-inner {
+    height: calc(100dvh - 170px);
+    overflow-y: auto;
+    overflow-x: hidden;
+ }
+ .chat-right-inner{
+     overflow-y: auto;
+     overflow-x: hidden;
+     height: 100%;
+ }
+ .chat-left-inner::-webkit-scrollbar,
+ .chat-right-inner::-webkit-scrollbar {
+     width: 5px;
+ }
+   
+ .chat-left-inner::-webkit-scrollbar-track,
+ .chat-right-inner::-webkit-scrollbar-track {
+     background: #000; 
+     border:1px  solid #000;
+     border-radius: 5px;
+     margin-top: 40px;
+     margin-bottom: 40px;
+ }
+    
+ .chat-left-inner::-webkit-scrollbar-thumb,
+ .chat-right-inner::-webkit-scrollbar-thumb {
+     background: #fff; 
+     border-radius: 5px;
+     border: 1px solid #000;
+ }
+ 
+.active-chat {
+    background-color: var(--grey);
+}
+@media screen and (max-width:1200px) {
+    .receive {
+        width: 70%;
+    }
+    .send {
+        width: 70%;
+        margin-left: 30%;
+    }
+    .chat-person {
+        max-width: 64px;
+        width: 100%;
+        margin-right: 10px;
+    }
+    .chat-right {
+        display: none;
+    }
+}
 @media screen and (max-width:992px){
     .comp-hero-admin .neg-margin {
         position: static !important;
@@ -99,6 +179,18 @@
     .bg-c {
         height: 210px !important;
         max-height: 210px !important;
+    }
+    .receive {
+        width: 100%;
+    }
+    .send {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .chat-person {
+        max-width: 64px;
+        width: 100%;
+        margin-right: 10px;
     }
 }
 @media screen and (max-width:778px){
@@ -119,3 +211,14 @@
         max-height: 320px !important;
     }
 }
+/* @media screen and (min-width:1201px) {
+   .chats,
+   .chats-msg {
+    display: block !important;
+   }
+    .chat-person {
+        max-width: 64px;
+        width: 100%;
+        margin-right: 10px;
+    }
+} */
