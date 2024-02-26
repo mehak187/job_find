@@ -528,12 +528,12 @@ textarea:focus{
         height: calc(100% - 0px);
     }
 }
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
     .side-div{
         display: block !important;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .img-logo {
         max-width: 95px;
     }
