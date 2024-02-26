@@ -138,6 +138,11 @@ textarea{
 .sgn{
     height: 100dvh;
 }
+.stg{
+    height: 10px;
+    width: 100%;
+    max-width: 70px;
+}
 .focus-none:focus {
     box-shadow: none;
     border: none;

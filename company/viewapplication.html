@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/main3.css">
+    <link rel="stylesheet" href="../css/main4.css">
+    <title>View Application</title>
+</head>
+
+<body class="body-grey">
+
+    <!-- navbar  -->
+    <nav class="nav-sec bg-white shadow py-2 px-xl-5">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="max-w">
+                    <a href="dashboard.html"><img src="../img/admin-logo.png" alt="" class="img-logo"></a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between max-w2">
+                    <div class="d-md-block d-none">
+                        <h3 class="mb-0">View Application</h3>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end gap-3 w-width">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="me-2 list-hidden pointer" id="toggleButton">
+                                <i class="bi bi-list bg-dark text-white px-2 py-2 rounded-2"></i>
+                            </div>
+                            <div class="position-relative rel-width">
+                                <a href="notifications.html">
+                                    <img src="../img/bell (2).png" alt="" class="img-bell">
+                                    <div class="dot"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-md-block d-none">
+                            <div class="d-flex align-items-center gap-2">
+                                <h6 class="mb-0">User Name</h6>
+                                <div>
+                                    <a href="#"><img src="../img/pro_file.png" alt="" class="img-profile"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="">
+        <div class="my_container">
+            <div class="d-flex justify-content-between gap-3 position-relative">
+                <div class="side-div bg-white p-2 rounded-3 position-side" id="content">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <div class="h-100">
+                            <div class="d-md-none d-block">
+                                <a href="#"
+                                    class="d-flex flex-column align-items-center text-dark text-decoration-none"><img
+                                        src="../img/pro_file.png" alt="" class="img-profile">User Name</a>
+                            </div>
+                            <ul class="list-unstyled main-ul overflow-auto">
+                                <li><a href="dashboard.html" class="">
+                                        <img src="../img/dashboard.png" alt="">
+                                        <p class="mb-0">Dashboard</p>
+                                    </a></li>
+                                <li><a href="publicprofile.html" class="">
+                                        <img src="../img/dashboard-white-building.png" alt="">
+                                        <p class="mb-0">Company Profile</p>
+                                    </a></li>
+                                <li><a href="messages.html" class="">
+                                        <img src="../img/messages.png" alt="">
+                                        <p class="mb-0">Messages</p>
+                                    </a></li>
+                                <li><a href="allapplications.html" class="active">
+                                        <img src="../img/dashboard-worker-light.png" alt="">
+                                        <p class="mb-0">All Applications</p>
+                                    </a></li>
+                                <li><a href="listings.html" class="">
+                                        <img src="../img/application.png" alt="">
+                                        <p class="mb-0">Shift Listings</p>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none text-danger log-off">
+                                <i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-side p-3">
+                    <div class="main-side2 p-3 pe-3">
+                        <div class="main-tabb border-2 border-bottom">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Resume</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Applicant Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Message</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="row py-4">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <img src="/img/client2.png" alt="">
+                                        <h3 class="mx-4 mb-0">Name Here</h3>
+                                    </div>
+                                    <div class="col-12 border border-1 rounded-5 p-3 mt-3">
+                                        <div
+                                            class="border-bottom border-2 d-flex align-items-center justify-content-between">
+                                            <p class="mb-0">Applied job</p>
+                                            <p class="mb-0">5 days ago</p>
+                                        </div>
+                                        <div class="py-2">
+                                            <h3 class="mb-0">Web Developer</h3>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="mb-0">Laravel Developer</p>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <a href="" class="green lgreen btn-dash me-2">Full-Time</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 bg-grey rounded-5 p-3 mt-3">
+                                        <div class="py-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h3 class="mb-0">Hired Stage</h3>
+                                                <p class="mb-0 text-success">interview</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="stg bg-warning mt-3 me-3 rounded-2">
+                                                </div>
+                                                <div class="stg bg-danger mt-3 me-3 rounded-2">
+                                                </div>
+                                                <div class="stg bg-primary mt-3 me-3 rounded-2">
+                                                </div>
+                                                <div class="stg bg-success mt-3 me-3 rounded-2">
+                                                </div>
+                                                <div class="stg bg-secondary mt-3 me-3 rounded-2">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-3 d-flex align-content-center justify-content-center">
+                                                <div class="col-4">
+                                                    <div class="pe-4">
+                                                        <p class="lgreen rounded-3 py-3 text-center m-0 green">
+                                                            Accepted
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="pe-4">
+                                                        <p class="lred rounded-3 py-3 text-center m-0 red">
+                                                            Declined
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="lpurple rounded-3 py-3 text-center m-0 purple">
+                                                        Pending
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-start justify-content-between py-4">
+                                        <div class="col-4 h-100 p-4">
+                                            <h3>Contact Details</h3>
+                                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div>
+                                                        <i class="bi bi-envelope text-dark bg-grey p-2 rounded-3"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="font-12 grey-clr font-12 mb-0">Email</h6>
+                                                        <p class="mb-0 font-12">naseeb@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div>
+                                                        <i class="bi bi-telephone text-dark bg-grey p-2 rounded-3"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="font-12 grey-clr font-12 mb-0">Phone number</h6>
+                                                        <p class="mb-0 font-12">+92 243 354 4654</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div>
+                                                        <i class="bi bi-translate text-dark bg-grey p-2 rounded-3"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="font-12 grey-clr font-12 mb-0">Languages</h6>
+                                                        <p class="mb-0 font-12">English, French</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div>
+                                                        <i class="bi bi-instagram text-dark bg-grey p-2 rounded-3"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="font-12 grey-clr font-12 mb-0">Instagram</h6>
+                                                        <p class="mb-0 font-12">instagram.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div>
+                                                        <i class="bi bi-linkedin text-dark bg-grey p-2 rounded-3"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="font-12 grey-clr font-12 mb-0">LinkedIn</h6>
+                                                        <p class="mb-0 font-12">LinkedIn.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div>
+                                                        <i class="bi bi-twitter-x text-dark bg-grey p-2 rounded-3"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="font-12 grey-clr font-12 mb-0">Twitter</h6>
+                                                        <p class="mb-0 font-12">twitter.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 shadow h-100 p-4 rounded-4 text-center">
+                                            <h3>Resume Will be Displayed here as a pdf</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+                            <form action="">
+                                <div class="row">
+                                    <div class="border-bottom border-2 mt-3">
+                                        <h5 class="mb-0">Basic Information</h5>
+                                        <p class="grey-clr">This is login information that you can update anytime</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <h5 class="mb-0 mt-3">Social Media Links</h5>
+                                            <div class="col-12">
+                                                <label for="">Instagram link</label>
+                                                <input type="text" name="" id="" class="my_input">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="">Twitter link</label>
+                                                <input type="text" name="" id="" class="my_input">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="">Facebook link</label>
+                                                <input type="text" name="" id="" class="my_input">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="">Linkedin link</label>
+                                                <input type="text" name="" id="" class="my_input">
+                                            </div>
+                                            <div class="my-3">
+                                                <input type="submit" value="Change Password"
+                                                    class="bg-dark px-3 py-2 border-0 text-white borderou rounded-3"
+                                                    name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">
+                            <form action="">
+                                <div class="row">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="border-bottom border-2 mt-3">
+                                            <h5 class="mb-0">Basic Information</h5>
+                                            <p class="grey-clr">This is notifications preferences that you can update
+                                                anytime.</p>
+                                        </div>
+                                        <div class="download-reports-checktime my-1">
+                                            <a href="addmember.html" class="text-decoration-none text-white"><i
+                                                    class="fa-solid fa-plus pe-2"></i>Add Members</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="p-2 pointer">
+                                                <div class="card p-3  bg-grey rounded-4 border border-1">
+                                                    <img src="/img/client1.png"
+                                                        class="card-img-top mx-auto border border-1 rounded-circle"
+                                                        alt="/img/ist.jpeg">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <p class="fw-md text-center mb-0 fs-5">Member Name here
+                                                                </p>
+                                                                <p class="mb-0 text-center text-secondary mt-2 fs-6">
+                                                                    CEO & CO-Founder
+                                                                </p>
+                                                                <div class="mt-4 d-flex justify-content-center">
+                                                                    <i class="fa-brands fa-instagram mx-2 fs-4"></i>
+                                                                    <i class="fa-brands fa-linkedin mx-2 fs-4"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="p-2 pointer">
+                                                <div class="card p-3  bg-grey rounded-4 border border-1">
+                                                    <img src="/img/client1.png"
+                                                        class="card-img-top mx-auto border border-1 rounded-circle"
+                                                        alt="/img/ist.jpeg">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <p class="fw-md text-center mb-0 fs-5">Member Name here
+                                                                </p>
+                                                                <p class="mb-0 text-center text-secondary mt-2 fs-6">
+                                                                    CEO & CO-Founder
+                                                                </p>
+                                                                <div class="mt-4 d-flex justify-content-center">
+                                                                    <i class="fa-brands fa-instagram mx-2 fs-4"></i>
+                                                                    <i class="fa-brands fa-linkedin mx-2 fs-4"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="p-2 pointer">
+                                                <div class="card p-3  bg-grey rounded-4 border border-1">
+                                                    <img src="/img/client1.png"
+                                                        class="card-img-top mx-auto border border-1 rounded-circle"
+                                                        alt="/img/ist.jpeg">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <p class="fw-md text-center mb-0 fs-5">Member Name here
+                                                                </p>
+                                                                <p class="mb-0 text-center text-secondary mt-2 fs-6">
+                                                                    CEO & CO-Founder
+                                                                </p>
+                                                                <div class="mt-4 d-flex justify-content-center">
+                                                                    <i class="fa-brands fa-instagram mx-2 fs-4"></i>
+                                                                    <i class="fa-brands fa-linkedin mx-2 fs-4"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="p-2 pointer">
+                                                <div class="card p-3  bg-grey rounded-4 border border-1">
+                                                    <img src="/img/client1.png"
+                                                        class="card-img-top mx-auto border border-1 rounded-circle"
+                                                        alt="/img/ist.jpeg">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <p class="fw-md text-center mb-0 fs-5">Member Name here
+                                                                </p>
+                                                                <p class="mb-0 text-center text-secondary mt-2 fs-6">
+                                                                    CEO & CO-Founder
+                                                                </p>
+                                                                <div class="mt-4 d-flex justify-content-center">
+                                                                    <i class="fa-brands fa-instagram mx-2 fs-4"></i>
+                                                                    <i class="fa-brands fa-linkedin mx-2 fs-4"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="p-2 pointer">
+                                                <div class="card p-3  bg-grey rounded-4 border border-1">
+                                                    <img src="/img/client1.png"
+                                                        class="card-img-top mx-auto border border-1 rounded-circle"
+                                                        alt="/img/ist.jpeg">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <p class="fw-md text-center mb-0 fs-5">Member Name here
+                                                                </p>
+                                                                <p class="mb-0 text-center text-secondary mt-2 fs-6">
+                                                                    CEO & CO-Founder
+                                                                </p>
+                                                                <div class="mt-4 d-flex justify-content-center">
+                                                                    <i class="fa-brands fa-instagram mx-2 fs-4"></i>
+                                                                    <i class="fa-brands fa-linkedin mx-2 fs-4"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="p-2 pointer">
+                                                <div class="card p-3  bg-grey rounded-4 border border-1">
+                                                    <img src="/img/client1.png"
+                                                        class="card-img-top mx-auto border border-1 rounded-circle"
+                                                        alt="/img/ist.jpeg">
+                                                    <div class="card-body">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div>
+                                                                <p class="fw-md text-center mb-0 fs-5">Member Name here
+                                                                </p>
+                                                                <p class="mb-0 text-center text-secondary mt-2 fs-6">
+                                                                    CEO & CO-Founder
+                                                                </p>
+                                                                <div class="mt-4 d-flex justify-content-center">
+                                                                    <i class="fa-brands fa-instagram mx-2 fs-4"></i>
+                                                                    <i class="fa-brands fa-linkedin mx-2 fs-4"></i>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <input type="submit" value="Save"
+                                            class="bg-dark px-3 py-2 border-0 text-white borderou rounded-3" name=""
+                                            id="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
