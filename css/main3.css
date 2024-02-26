@@ -533,7 +533,7 @@ textarea:focus{
         display: block !important;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .img-logo {
         max-width: 95px;
     }
