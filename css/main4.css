@@ -18,7 +18,7 @@
   border-radius: 18px;
 }
 
-.companies-req-table{
+.worker-req-table {
   height: calc(100dvh - 210px);
   overflow: auto;
   padding-right: 10px;
@@ -26,7 +26,15 @@
   border-radius: 18px;
 }
 
-.checkinout-table{
+.companies-req-table {
+  height: calc(100dvh - 210px);
+  overflow: auto;
+  padding-right: 10px;
+  width: 100%;
+  border-radius: 18px;
+}
+
+.checkinout-table {
   height: calc(100dvh - 220px);
   overflow: auto;
   padding-right: 10px;
@@ -62,7 +70,8 @@
   /* border: 1px solid rebeccapurple; */
 }
 
-.dashboard-table2, .myapplication-table {
+.dashboard-table2,
+.myapplication-table {
   height: calc(100dvh - 330px);
   overflow: auto;
   padding-right: 10px;
@@ -214,7 +223,7 @@
   padding-left: 10px;
 }
 
-.box-check-in input::placeholder{
+.box-check-in input::placeholder {
   font-size: 16px;
 }
 
@@ -474,11 +483,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #1c1c1c;
 }
 
-.custom-application-heading h3{
+.custom-application-heading h3 {
   font-size: 20px;
 }
 
-.custom-application-heading p{
+.custom-application-heading p {
   font-size: 14px;
 }
 
@@ -488,7 +497,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .dashboard-table2::-webkit-scrollbar,
 .checkinout-table::-webkit-scrollbar,
 .myapplication-table::-webkit-scrollbar,
-.companies-req-table::-webkit-scrollbar {
+.companies-req-table::-webkit-scrollbar,
+.worker-req-table::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -498,7 +508,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .dashboard-table2::-webkit-scrollbar-track,
 .checkinout-table::-webkit-scrollbar-track,
 .myapplication-table::-webkit-scrollbar-track,
-.companies-req-table::-webkit-scrollbar-track {
+.companies-req-table::-webkit-scrollbar-track,
+.worker-req-table::-webkit-scrollbar-track {
   background: #000;
   border: 1px solid #000;
   border-radius: 5px;
@@ -511,7 +522,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .dashboard-table2::-webkit-scrollbar-thumb,
 .checkinout-table::-webkit-scrollbar-thumb,
 .myapplication-table::-webkit-scrollbar-thumb,
-.companies-req-table::-webkit-scrollbar-thumb {
+.companies-req-table::-webkit-scrollbar-thumb,
+.worker-req-table::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 5px;
   border: 1px solid black;
@@ -533,25 +545,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     z-index: -999;
   }
 
-  .companies-req-table{
+  .companies-req-table {
     height: calc(100dvh - 240px);
   }
 
-  .checkinout-custom-display{
+  .checkinout-custom-display {
     flex-direction: column;
   }
 
-  .custom-height3{
+  .custom-height3 {
     height: 100px;
   }
 
-  .justify-content-custom{
+  .justify-content-custom {
     justify-content: center;
   }
 
-  .checkinout-table{
+  .checkinout-table {
     height: calc(100dvh - 250px);
     margin-top: 20px;
+  }
+
+  .worker-req-table {
+    height: calc(100dvh - 240px);
   }
 }
 
@@ -570,9 +586,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     z-index: -999;
   }
 
-  .companies-req-table{
+  .companies-req-table {
     height: calc(100dvh - 260px);
   }
+
+  .worker-req-table {
+    height: calc(100dvh - 260px);
+  }
+
 }
 
 @media screen and (max-width:1036px) {
@@ -592,11 +613,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 15px;
   }
 
-  .custom-height2{
-  height: 220px;
+  .custom-height2 {
+    height: 220px;
 
   }
-  
+
   .dashboard-table2 {
     height: calc(100dvh - 360px);
     overflow: auto;
@@ -613,20 +634,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .checktime-top {
     height: 110px;
-  } 
-
-  .checktime-table {
-    height: calc(100dvh - 265px);
   }
 
-  .checkinout-table{
+  .checktime-table {
+    height: calc(100dvh - 270px);
+  }
+
+  .checkinout-table {
     height: calc(100dvh - 250px);
   }
 
-  .companies-req-table{
+  .companies-req-table {
     height: calc(100dvh - 275px);
   }
 
+  .worker-req-table {
+    height: calc(100dvh - 275px);
+  }
 }
 
 @media screen and (max-width: 855px) {
@@ -693,7 +717,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
   }
 
-  .box-check-inout{
+  .box-check-inout {
     height: 35px;
     padding: 0;
     width: 300px;
@@ -703,24 +727,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
     padding-left: 15px;
   }
-  
+
   .box-check-inout input {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width:576px)  {
-  .checkinout-table{
+@media screen and (max-width:576px) {
+  .checkinout-table {
     height: calc(100dvh - 270px);
   }
 
-  .custom-height3{
+  .custom-height3 {
     height: 135px;
   }
 
   .myapplication-table {
     height: calc(100dvh - 340px);
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
 }
 
@@ -796,7 +820,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 10px;
   }
 
-  .checkinout-table{
+  .checkinout-table {
     height: calc(100dvh - 275px);
   }
 
@@ -808,11 +832,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media screen and (max-width:409px) {
 
-  .checktime-table{
-    height: calc(100dvh - 295px);
+  .checktime-table {
+    height: calc(100dvh - 300px);
   }
 
-  .box-check-inout{
+  .box-check-inout {
     width: 260px;
   }
 
@@ -876,23 +900,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 12px;
   }
 
-  .font-size-setting h5{
+  .font-size-setting h5 {
     font-size: 18px;
   }
 
-  .font-size-setting h6{
+  .font-size-setting h6 {
     font-size: 16px;
   }
 
-  .font-size-setting label{
+  .font-size-setting label {
     font-size: 14px;
   }
 
-  .font-size-setting input::placeholder, .font-size-setting textarea, .font-size-setting p{
+  .font-size-setting input::placeholder,
+  .font-size-setting textarea,
+  .font-size-setting p {
     font-size: 13px;
   }
 
-  .companies-req-table{
+  .companies-req-table {
+    height: calc(100dvh - 300px);
+  }
+
+  .worker-req-table {
     height: calc(100dvh - 300px);
   }
 
@@ -916,16 +946,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     align-items: center;
   }
 
-  .checktime-table{
-    height: calc(100dvh - 330px);
+  .checktime-table {
+    height: calc(100dvh - 340px);
   }
 
-  .box-check-inout{
+  .box-check-inout {
     width: 210px;
   }
 
-  .btn-fs-setting{
+  .btn-fs-setting {
     font-size: 13px;
+  }
+
+  .myapplication-table {
+    height: calc(100dvh - 370px);
   }
 
 }
