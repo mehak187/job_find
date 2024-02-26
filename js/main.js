@@ -42,3 +42,13 @@ $(document).ready(function(){
         }
     ]
 });
+$(document).ready(function(){
+  $(".chat-name").click(function(){
+    $(".chats").hide();
+    $(".chat-right").show();
+  });
+  $(".chat-close").click(function(){
+    $(".chat-right").hide();
+    $(".chats").show();
+  });
+});
