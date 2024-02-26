@@ -528,7 +528,7 @@ textarea:focus{
         height: calc(100% - 0px);
     }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
     .side-div{
         display: block !important;
     }
