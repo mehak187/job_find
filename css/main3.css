@@ -563,6 +563,7 @@ textarea:focus{
     }
     .position-side{
         position: absolute;
+        z-index: 222222222 !important;
         box-shadow: 11px 0px 5px 0px rgba(235,223,223,0.75);
     }
     .side-div{
