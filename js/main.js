@@ -43,7 +43,7 @@ $(document).ready(function(){
     ]
 });
 $(document).ready(function(){
-  $(".chat-name").click(function(){
+  $(".chats").click(function(){
     $(".chats").hide();
     $(".chats-msg").show();
   });
