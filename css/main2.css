@@ -160,7 +160,7 @@ text-overflow: ellipsis;
         width: 100%;
         margin-right: 10px;
     }
-    .chat-right {
+    .chats-msg {
         display: none;
     }
 }
@@ -211,7 +211,7 @@ text-overflow: ellipsis;
         max-height: 320px !important;
     }
 }
-/* @media screen and (min-width:1201px) {
+@media screen and (min-width:1201px) {
    .chats,
    .chats-msg {
     display: block !important;
@@ -221,4 +221,4 @@ text-overflow: ellipsis;
         width: 100%;
         margin-right: 10px;
     }
-} */
+}

@@ -45,10 +45,10 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".chat-name").click(function(){
     $(".chats").hide();
-    $(".chat-right").show();
+    $(".chats-msg").show();
   });
   $(".chat-close").click(function(){
-    $(".chat-right").hide();
+    $(".chats-msg").hide();
     $(".chats").show();
   });
 });
