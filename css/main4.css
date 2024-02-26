@@ -478,7 +478,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .checktime-table::-webkit-scrollbar,
 .dashboard-table1::-webkit-scrollbar,
 .dashboard-table2::-webkit-scrollbar,
-.checkinout-table::-webkit-scrollbar {
+.checkinout-table::-webkit-scrollbar,
+.myapplication-table::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -486,7 +487,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .checktime-table::-webkit-scrollbar-track,
 .dashboard-table1::-webkit-scrollbar-track,
 .dashboard-table2::-webkit-scrollbar-track,
-.checkinout-table::-webkit-scrollbar-track {
+.checkinout-table::-webkit-scrollbar-track,
+.myapplication-table::-webkit-scrollbar-track {
   background: #000;
   border: 1px solid #000;
   border-radius: 5px;
@@ -497,11 +499,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .checktime-table::-webkit-scrollbar-thumb,
 .dashboard-table1::-webkit-scrollbar-thumb,
 .dashboard-table2::-webkit-scrollbar-thumb,
-.checkinout-table::-webkit-scrollbar-thumb {
+.checkinout-table::-webkit-scrollbar-thumb,
+.myapplication-table::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 5px;
-  border: 1px solid #000;
-  margin-block: 55px;
+  border: 1px solid black;
+  /* margin-block: 55px; */
 }
 
 @media screen and (max-width: 1211px) {
@@ -851,6 +854,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 12px;
   }
 
+  .font-size-setting h5{
+    font-size: 18px;
+  }
+
+  .font-size-setting h6{
+    font-size: 16px;
+  }
+
+  .font-size-setting label{
+    font-size: 14px;
+  }
+
+  .font-size-setting input::placeholder, .font-size-setting textarea, .font-size-setting p{
+    font-size: 13px;
+  }
+
 }
 
 @media screen and (max-width: 367px) {
@@ -877,6 +896,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .box-check-inout{
     width: 210px;
+  }
+
+  .btn-fs-setting{
+    font-size: 13px;
   }
 
 }
