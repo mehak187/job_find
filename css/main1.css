@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .joblg {
   background-color: #fff;
   min-width: 90px;
@@ -15,66 +16,81 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
 .joblg img {
   width: 50px;
 }
+
 .btnwdth {
   width: 100%;
   max-width: 200px;
 }
-.jdm ul{
+
+.jdm ul {
   padding-left: 0px;
   line-height: 2;
   list-style: none;
 }
+
 .jdm li {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.jdm li img{
-    width: 100%;
-    max-width: 20px;
-    max-height: 20px;
+
+.jdm li img {
+  width: 100%;
+  max-width: 20px;
+  max-height: 20px;
 }
 
 .img1 {
   height: calc(65% - 5px)
 }
+
 .img2 {
   height: calc(35% - 5px)
 }
+
 .img4 {
   height: calc(65% - 5px)
 }
+
 .img3 {
   height: calc(35% - 5px)
 }
+
 .object-cover {
   object-fit: cover;
 }
-.signupw{
+
+.signupw {
   width: 100%;
   max-width: 300px;
 }
+
 .sgnicn {
   width: 30px;
   margin-right: 10px;
 
 }
+
 .wlcimg {
   width: 100%;
   max-width: 500px;
   height: 100%;
   object-fit: cover;
   object-position: top;
-  max-height:650px;
+  max-height: 650px;
 }
+
 .social-bg {
   background: #FBFBFB;
 }
+
 .card-img-top {
   max-width: 100px;
 }
+
 .word-break {
   word-break: break-all;
 }
