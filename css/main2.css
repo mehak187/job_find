@@ -147,6 +147,13 @@ text-overflow: ellipsis;
 .active-chat {
     background-color: var(--grey);
 }
+.profile-tm {
+    min-width: 220px;
+}
+.card-img-width {
+    max-width: 120px;
+}
+
 @media screen and (max-width:1200px) {
     .receive {
         width: 70%;
@@ -163,8 +170,14 @@ text-overflow: ellipsis;
     .chats-msg {
         display: none;
     }
+    .center2 .slick-dots {
+        bottom: 32px !important;
+    }
 }
 @media screen and (max-width:992px){
+    .center2 {
+        height: 400px;
+    }
     .comp-hero-admin .neg-margin {
         position: static !important;
     }
@@ -204,11 +217,18 @@ text-overflow: ellipsis;
         height: 270px !important;
         max-height: 270px !important;
     }
+ 
 }
 @media screen and (max-width:400px){
     .bg-c {
         height: 320px !important;
         max-height: 320px !important;
+    }
+    .dashboard-table1b {
+        margin-top: 0 !important;
+    }
+    .center2 .slick-dots {
+        bottom: 12px !important;
     }
 }
 @media screen and (min-width:1201px) {
