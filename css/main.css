@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'rubik';
     src: url('../fonts/rubik-bold-webfont.woff2') format('woff2'),
-         url('../fonts/rubik-bold-webfont.woff') format('woff');
+        url('../fonts/rubik-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -18,7 +18,7 @@
 @font-face {
     font-family: 'rubik';
     src: url('../fonts/rubik-medium-webfont.woff2') format('woff2'),
-         url('../fonts/rubik-medium-webfont.woff') format('woff');
+        url('../fonts/rubik-medium-webfont.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 
@@ -27,107 +27,139 @@
 @font-face {
     font-family: 'rubik';
     src: url('../fonts/rubik-regular-webfont.woff2') format('woff2'),
-         url('../fonts/rubik-regular-webfont.woff') format('woff');
+        url('../fonts/rubik-regular-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 
 }
+
 :root {
-    --pink:#FFFBF2;
-    --grey:#E6E8DF;
+    --pink: #FFFBF2;
+    --grey: #E6E8DF;
 }
+
 .bg-pink {
     background: var(--pink);
 }
+
 .bg-grey {
     background: var(--grey);
 }
+
 .pointer {
     cursor: pointer;
 }
+
 .overflow-auto {
     overflow: auto;
 }
+
 body {
     font-family: 'rubik';
     font-weight: 400;
 }
+
 .fw-md {
     font-weight: 500;
 }
+
 .fw-bd {
     font-weight: 700;
 }
+
 .fw-reg {
     font-weight: 400;
 }
-.green{
+
+.green {
     color: #11734B;
 }
-.lpurple{
+
+.lpurple {
     background-color: #DAD9F8;
 }
-.purple{
+
+.purple {
     color: #4640DE;
 }
-.lgreen{
+
+.lgreen {
     background-color: #CFE3DB;
 }
-.gry{
+
+.gry {
     background-color: #cdcdcd;
 }
-.greenbtm{
+
+.greenbtm {
     border-bottom: solid 10px #11734B;
 }
-.lblue{
+
+.lblue {
     background-color: #E1E1F1;
 }
-.blue{
+
+.blue {
     color: #0A53A8;
 }
-.pink{
+
+.pink {
     color: #921051;
 }
-.bg-white1{
+
+.bg-white1 {
     background-color: #FBFBFB;
 }
-.lpink{
+
+.lpink {
     background-color: #F4DAE7;
 }
-.borderblue{
+
+.borderblue {
     border: solid 1px #0A53A8;
 }
-.bluebtm{
+
+.bluebtm {
     border-bottom: solid 10px #0A53A8;
 
 }
-.orange{
+
+.orange {
     color: #FD760C;
 }
-.borderorng{
-    border: solid 1px  #FD760C;
+
+.borderorng {
+    border: solid 1px #FD760C;
 }
-.borderr{
+
+.borderr {
     border-right: solid 1px #cdcdcd;
 }
-.black{
+
+.black {
     color: #000;
 }
-.blackbtm{
+
+.blackbtm {
     border-bottom: solid 10px #000;
 }
-.sky{
+
+.sky {
     color: #3083E2;
 }
-.skybtm{
+
+.skybtm {
     border-bottom: solid 10px #3083E2;
 }
-.grybtm{
+
+.grybtm {
     border-bottom: solid 2px #9c9c9c;
 }
-textarea{
+
+textarea {
     resize: none;
 }
+
 .mycontainer {
     max-width: 1200px;
     width: 100%;
@@ -135,26 +167,32 @@ textarea{
     padding: 0 20px;
     box-sizing: border-box;
 }
-.sgn{
+
+.sgn {
     height: 100dvh;
 }
-.stg{
+
+.stg {
     height: 10px;
     width: 100%;
     max-width: 70px;
 }
+
 .focus-none:focus {
     box-shadow: none;
     border: none;
     outline: none;
 }
+
 .overflow-hidden {
     overflow: hidden;
 }
-.nowrap{
+
+.nowrap {
     text-wrap: nowrap !important;
 }
-@media screen and (max-width:577px){
+
+@media screen and (max-width:577px) {
     .filter-menu {
         position: absolute;
         background: white;
@@ -165,7 +203,8 @@ textarea{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
-@media screen and (min-width:577px){
+
+@media screen and (min-width:577px) {
     .filter-menu {
         display: block !important;
     }
